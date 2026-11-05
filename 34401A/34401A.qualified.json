@@ -1,0 +1,185 @@
+{
+  "model": "34401A",
+  "family": "DMM",
+  "compiled": "2026-11-05T03:49:35Z",
+  "source": "WEB.OsApi /api/os/captures/qualified (Nabber nab_known: each query asked alone, once per unit)",
+  "units": [
+    "visa/DMM/34401A/DevttyUSB0",
+    "visa/DMM/34401A/DevttyUSB3"
+  ],
+  "commands": [
+    {
+      "endpoint": "Get_Ese",
+      "query": "*ESE?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849702.0223055
+    },
+    {
+      "endpoint": "Read_IDN",
+      "query": "*IDN?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849702.7169793
+    },
+    {
+      "endpoint": "Get_Psc",
+      "query": "*PSC?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849703.3738763
+    },
+    {
+      "endpoint": "Get_Sre",
+      "query": "*SRE?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849704.0688055
+    },
+    {
+      "endpoint": "Get_Stb",
+      "query": "*STB?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849704.757865
+    },
+    {
+      "endpoint": "Get_Detector_Bandwidth",
+      "query": ":DET:BAND?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849738.3820639
+    },
+    {
+      "endpoint": "Get_Display_Text",
+      "query": ":DISP:TEXT?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849739.062125
+    },
+    {
+      "endpoint": "Get_Frequency_Aperture",
+      "query": ":FREQ:APER?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849744.5891685
+    },
+    {
+      "endpoint": "Get_Frequency_Voltage_Range",
+      "query": ":FREQ:VOLT:RANG?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849753.5411134
+    },
+    {
+      "endpoint": "Get_Fresistance_Nplcycles",
+      "query": ":FRES:NPLC?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849759.7433958
+    },
+    {
+      "endpoint": "Get_Fresistance_Range",
+      "query": ":FRES:RANG?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849825.5425196
+    },
+    {
+      "endpoint": "Get_Fresistance_Resolution",
+      "query": ":FRES:RES?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849831.7425122
+    },
+    {
+      "endpoint": "Get_Func",
+      "query": ":FUNC?",
+      "units": [
+        "visa/DMM/34401A/DevttyUSB0",
+        "visa/DMM/34401A/DevttyUSB3"
+      ],
+      "first": 1793849871.3417125
+    }
+  ],
+  "refused": [
+    {
+      "query": ":AVER:AVER?",
+      "why": "refused: -113,\"Undefined header\""
+    },
+    {
+      "query": ":AVER:COUN?",
+      "why": "refused: -113,\"Undefined header\""
+    },
+    {
+      "query": ":DB:REF?",
+      "why": "refused: -113,\"Undefined header\""
+    },
+    {
+      "query": ":LIM:LOW?",
+      "why": "refused: -113,\"Undefined header\""
+    },
+    {
+      "query": ":LIM:UPP?",
+      "why": "refused: -113,\"Undefined header\""
+    },
+    {
+      "query": ":NULL:OFFS?",
+      "why": "refused: -113,\"Undefined header\""
+    }
+  ],
+  "grab_qualified": [
+    {
+      "unit": "visa/DMM/34401A/DevttyUSB0",
+      "when": "2026-11-05T03:51:15Z",
+      "ok": true,
+      "parts": [
+        {
+          "part": "GRAB",
+          "expected": 13,
+          "answered": 13,
+          "ok": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "unit": "visa/DMM/34401A/DevttyUSB3",
+      "when": "2026-11-05T03:51:17Z",
+      "ok": true,
+      "parts": [
+        {
+          "part": "GRAB",
+          "expected": 13,
+          "answered": 13,
+          "ok": true,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

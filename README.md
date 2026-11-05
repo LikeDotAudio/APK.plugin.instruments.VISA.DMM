@@ -17,7 +17,7 @@ The **DMM** instruments of the APK.audio bench, as one thing: 15 models, their c
 | Model | Maker | What | Commands | Table | API |
 |---|---|---|---:|:---:|---|
 | [2000](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/2000.md) | Keithley | 6.5 Digit Multimeter (Legacy) | 155 |  | :15400 |
-| [34401A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34401A.md) | HP / Agilent / Keysight | 6.5 Digit Benchtop Standard (Legacy) | 155 | ✅ | :15401 |
+| [34401A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34401A.md) | HP / Agilent / Keysight | 6.5 Digit Benchtop Standard (Legacy) | 156 | ✅ | :15401 |
 | [34410A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34410A.md) | HP / Agilent / Keysight | 6.5 Digit High Performance | 155 |  | :15402 |
 | [34411A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34411A.md) | HP / Agilent / Keysight | 6.5 Digit Enhanced Performance | 155 |  | :15403 |
 | [34420A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34420A.md) | HP / Agilent / Keysight | Nano-volt / Micro-ohm Meter | 155 |  | :15404 |

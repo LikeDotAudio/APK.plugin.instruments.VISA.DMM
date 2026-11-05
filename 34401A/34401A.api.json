@@ -85,10 +85,10 @@
     "do": "Zero-argument execution actions and trigger commands"
   },
   "summary": {
-    "total_commands": 155,
+    "total_commands": 156,
     "get_count": 71,
     "set_count": 42,
-    "nab_count": 73,
+    "nab_count": 74,
     "rig_count": 5,
     "do_count": 35
   },
@@ -5191,6 +5191,74 @@
           "reading_direction": "out"
         },
         "unverified": true
+      },
+      "GRAB": {
+        "command": "GRAB",
+        "verb": "nab",
+        "description": "GRAB \u2014 all 13 queries this model answered alone on the bench, stacked; the answers come back `;`-separated in the order of grab.commands",
+        "scpi": "*ESE?;*PSC?;*SRE?;*STB?;:DET:BAND?;:DISP:TEXT?;:FREQ:APER?;:FREQ:VOLT:RANG?;:FRES:NPLC?;:FRES:RANG?;:FRES:RES?;:FUNC?;*IDN?",
+        "subsystem": "GRAB",
+        "group": "GRAB",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": {
+          "count": 13,
+          "type": "LIST"
+        },
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/GRAB",
+          "direction": "in",
+          "payload_format": {
+            "command": "GRAB"
+          },
+          "reading_topic": "APK.audio/System/Protocols/visa/Device/<type>/<model>/<dev>/Reading/GRAB",
+          "reading_direction": "out"
+        },
+        "unverified": false,
+        "grab": {
+          "commands": [
+            "Get_Ese",
+            "Get_Psc",
+            "Get_Sre",
+            "Get_Stb",
+            "Get_Detector_Bandwidth",
+            "Get_Display_Text",
+            "Get_Frequency_Aperture",
+            "Get_Frequency_Voltage_Range",
+            "Get_Fresistance_Nplcycles",
+            "Get_Fresistance_Range",
+            "Get_Fresistance_Resolution",
+            "Get_Func",
+            "Read_IDN"
+          ],
+          "queries": [
+            "*ESE?",
+            "*PSC?",
+            "*SRE?",
+            "*STB?",
+            ":DET:BAND?",
+            ":DISP:TEXT?",
+            ":FREQ:APER?",
+            ":FREQ:VOLT:RANG?",
+            ":FRES:NPLC?",
+            ":FRES:RANG?",
+            ":FRES:RES?",
+            ":FUNC?",
+            "*IDN?"
+          ],
+          "chunks": [],
+          "max_command_bytes": 240,
+          "qualified": {
+            "compiled": "2026-11-05T03:49:35Z",
+            "units": [
+              "visa/DMM/34401A/DevttyUSB0",
+              "visa/DMM/34401A/DevttyUSB3"
+            ],
+            "source": "34401A.qualified.json"
+          }
+        }
       }
     },
     "rig": {

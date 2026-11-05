@@ -15,7 +15,7 @@ Every DMM model this library drives, and how to drive it. Each model answers the
 | Model | Maker | get | set | nab | rig | do | Port |
 |---|---|---:|---:|---:|---:|---:|---:|
 | [2000](SDK/2000.md) | Keithley | 71 | 42 | 73 | 5 | 35 | 15400 |
-| [34401A](SDK/34401A.md) | HP / Agilent / Keysight | 71 | 42 | 73 | 5 | 35 | 15401 |
+| [34401A](SDK/34401A.md) | HP / Agilent / Keysight | 71 | 42 | 74 | 5 | 35 | 15401 |
 | [34410A](SDK/34410A.md) | HP / Agilent / Keysight | 71 | 42 | 73 | 5 | 35 | 15402 |
 | [34411A](SDK/34411A.md) | HP / Agilent / Keysight | 71 | 42 | 73 | 5 | 35 | 15403 |
 | [34420A](SDK/34420A.md) | HP / Agilent / Keysight | 71 | 42 | 73 | 5 | 35 | 15404 |
