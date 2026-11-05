@@ -9,5 +9,6 @@ How to use it and how it is built.
 |---|---|
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Architecture — INSTRUMENT.DMM |
 | [SDK.md](SDK.md) | SDK — INSTRUMENT.DMM |
+| [SMOKE.md](SMOKE.md) | Smoke test — INSTRUMENT.DMM |
 | [SDK/](SDK/) | folder |
 <!-- /wiki:index -->
