@@ -1855,7 +1855,7 @@
         },
         "returns": {
           "count": 1,
-          "type": "NR2"
+          "type": "ERROR"
         },
         "mqtt": {
           "topic": "APK.audio/Gui/Komands/DMM/Read_Error",
@@ -5043,7 +5043,7 @@
         },
         "returns": {
           "count": 1,
-          "type": "NR2"
+          "type": "ERROR"
         },
         "mqtt": {
           "topic": "APK.audio/Gui/Komands/DMM/Read_Error",
