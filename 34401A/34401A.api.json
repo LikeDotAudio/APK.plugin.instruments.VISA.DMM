@@ -2480,14 +2480,7 @@
         ],
         "arg": {
           "kind": "integer",
-          "limits": "query",
-          "steps": [
-            0.02,
-            0.2,
-            1,
-            10,
-            100
-          ]
+          "limits": "query"
         },
         "returns": null,
         "mqtt": {
@@ -2798,14 +2791,7 @@
         ],
         "arg": {
           "kind": "integer",
-          "limits": "query",
-          "steps": [
-            0.02,
-            0.2,
-            1,
-            10,
-            100
-          ]
+          "limits": "query"
         },
         "returns": null,
         "mqtt": {
@@ -2973,14 +2959,7 @@
           "kind": "integer",
           "unit": "V",
           "domain": "volt",
-          "limits": "query",
-          "steps": [
-            0.02,
-            0.2,
-            1,
-            10,
-            100
-          ]
+          "limits": "query"
         },
         "returns": null,
         "mqtt": {
