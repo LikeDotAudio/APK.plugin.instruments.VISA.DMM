@@ -414,6 +414,23 @@
                 "background": "#1a1a1a"
               }
             },
+            "komand_mode_from": {
+              "komand_listen": "meter_reading/function",
+              "names": {
+                "VOLT": "DC",
+                "VOLT:DC": "DC",
+                "VOLT:AC": "AC",
+                "CURR": "DC",
+                "CURR:DC": "DC",
+                "CURR:AC": "AC",
+                "RES": "2W",
+                "FRES": "4W",
+                "FREQ": "Freq",
+                "PER": "Period",
+                "CONT": "Cont",
+                "DIOD": "Diode"
+              }
+            },
             "komand_listen": "meter_reading/value"
           }
         }
