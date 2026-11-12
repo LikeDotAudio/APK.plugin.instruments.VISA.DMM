@@ -2024,6 +2024,20 @@
       "subsystem": "MEAS",
       "unverified": true
     },
+    "MEASure_Frequency": {
+      "scpi": "MEASure:FREQuency?",
+      "scpiFast": "MEAS:FREQ?",
+      "description": "Measure frequency, autoranged, default resolution",
+      "returns": {
+        "count": 1,
+        "type": "NR3",
+        "unit": "Hz"
+      },
+      "group": "Configure and Measure immediately",
+      "subsystem": "MEASure",
+      "unverified": true,
+      "notes": "The no-argument form of Measure_Frequency, for the panel's AUTO seek (owner 2026-11-12): MEASure:FREQuency? with its range and resolution left to the meter (34401-90004 Ch. 4, MEASure? commands). An input with no signal answers 0 after the gate time rather than an error."
+    },
     "Measure_Frequency": {
       "scpi": ":MEASure:FREQuency? <range>,<resolution>",
       "scpiFast": ":MEAS:FREQ? <range>,<resolution>",

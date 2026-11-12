@@ -29,6 +29,7 @@
             "type": "SelectorSwitch",
             "AES70": "OcaSwitch",
             "positions": [
+              "AUTO",
               "VOLT",
               "VOLT:AC",
               "RES",
@@ -36,6 +37,7 @@
               "CONT"
             ],
             "position_labels": [
+              "AUTO",
               "DC VOLTS",
               "AC VOLTS",
               "RESISTANCE",
@@ -43,7 +45,7 @@
               "CONTINUITY"
             ],
             "value": {
-              "default_value": "VOLT"
+              "default_value": "AUTO"
             },
             "label": {
               "En": "Measurement",
@@ -80,7 +82,11 @@
               "converter": "",
               "readback": "meter_reading"
             },
-            "komand_listen": "meter_reading/function"
+            "komand_listen": "meter_reading/function",
+            "auto_seek": {
+              "position": "AUTO",
+              "fires": "Seek"
+            }
           },
           "Reading": {
             "type": "_NeedleVUMeter",
@@ -227,6 +233,149 @@
               }
             },
             "komand_listen": "meter_reading/value"
+          },
+          "Seek": {
+            "type": "_GuiSeek",
+            "label": {
+              "En": "What is attached",
+              "Fr": "Ce qui est branché",
+              "De": "Was angeschlossen ist",
+              "Es": "Qué está conectado"
+            },
+            "layout": {
+              "height": 64,
+              "width": "100%",
+              "font": 16
+            },
+            "seek": {
+              "timeout_ms": 8000,
+              "first": "1_dc",
+              "stages": {
+                "1_dc": {
+                  "komand_handler": {
+                    "enable": true,
+                    "komand_type": "nab",
+                    "sub_path": "DMM",
+                    "command": "MEASure_Voltage_DC",
+                    "input_name": "",
+                    "converter": ""
+                  },
+                  "komand_listen": "MEASure_Voltage_DC",
+                  "as": "dc",
+                  "else": "2_ac"
+                },
+                "2_ac": {
+                  "komand_handler": {
+                    "enable": true,
+                    "komand_type": "nab",
+                    "sub_path": "DMM",
+                    "command": "MEASure_Voltage_AC",
+                    "input_name": "",
+                    "converter": ""
+                  },
+                  "komand_listen": "MEASure_Voltage_AC",
+                  "as": "ac",
+                  "found": [
+                    {
+                      "when": {
+                        "ac": {
+                          "abs_over": 0.01,
+                          "abs_over_field": "dc"
+                        }
+                      },
+                      "then": "3_freq"
+                    },
+                    {
+                      "when": {
+                        "dc": {
+                          "abs_over": 0.005
+                        }
+                      },
+                      "function": "VOLT:DC",
+                      "say": "DC {dc}V"
+                    },
+                    {
+                      "when": {
+                        "ac": {
+                          "abs_over": 0.01
+                        }
+                      },
+                      "then": "3_freq"
+                    }
+                  ],
+                  "else": "4_ohms"
+                },
+                "3_freq": {
+                  "komand_handler": {
+                    "enable": true,
+                    "komand_type": "nab",
+                    "sub_path": "DMM",
+                    "command": "MEASure_Frequency",
+                    "input_name": "",
+                    "converter": ""
+                  },
+                  "komand_listen": "MEASure_Frequency",
+                  "as": "freq",
+                  "found": [
+                    {
+                      "when": {
+                        "freq": {
+                          "over": 0
+                        }
+                      },
+                      "function": "VOLT:AC",
+                      "say": "AC {ac}V rms at {freq}Hz"
+                    }
+                  ],
+                  "else_function": "VOLT:AC",
+                  "else_say": "AC {ac}V rms, no steady frequency"
+                },
+                "4_ohms": {
+                  "komand_handler": {
+                    "enable": true,
+                    "komand_type": "nab",
+                    "sub_path": "DMM",
+                    "command": "MEASure_Resistance",
+                    "input_name": "",
+                    "converter": ""
+                  },
+                  "komand_listen": "MEASure_Resistance",
+                  "as": "ohms",
+                  "found": [
+                    {
+                      "when": {
+                        "ohms": {
+                          "under": 10
+                        }
+                      },
+                      "function": "RES",
+                      "say": "A short: {ohms}Ω across the inputs"
+                    },
+                    {
+                      "when": {
+                        "ohms": {
+                          "under": 120000000.0
+                        }
+                      },
+                      "function": "RES",
+                      "say": "A resistance: {ohms}Ω, no voltage on it"
+                    }
+                  ],
+                  "else_function": "VOLT:DC",
+                  "else_say": "Nothing attached: no volts, no AC, the inputs read open"
+                }
+              },
+              "apply": {
+                "komand_handler": {
+                  "enable": true,
+                  "komand_type": "set",
+                  "sub_path": "DMM",
+                  "command": "Set_Func",
+                  "input_name": "value",
+                  "converter": ""
+                }
+              }
+            }
           }
         }
       },

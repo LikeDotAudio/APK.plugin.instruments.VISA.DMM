@@ -85,10 +85,10 @@
     "do": "Zero-argument execution actions and trigger commands"
   },
   "summary": {
-    "total_commands": 205,
-    "get_count": 71,
+    "total_commands": 206,
+    "get_count": 72,
     "set_count": 94,
-    "nab_count": 74,
+    "nab_count": 75,
     "rig_count": 4,
     "do_count": 33
   },
@@ -1235,6 +1235,34 @@
             "command": "Get_Measure_Diode"
           },
           "reading_topic": "APK.audio/System/Protocols/visa/Device/<type>/<model>/<dev>/Reading/Get_Measure_Diode",
+          "reading_direction": "out"
+        },
+        "unverified": true
+      },
+      "MEASure_Frequency": {
+        "command": "MEASure_Frequency",
+        "verb": "get",
+        "description": "Measure frequency, autoranged, default resolution",
+        "scpi": "MEASure:FREQuency?",
+        "scpi_fast": "MEAS:FREQ?",
+        "subsystem": "MEASure",
+        "group": "Configure and Measure immediately",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": {
+          "count": 1,
+          "type": "NR3",
+          "unit": "Hz"
+        },
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/MEASure_Frequency",
+          "direction": "in",
+          "payload_format": {
+            "command": "MEASure_Frequency"
+          },
+          "reading_topic": "APK.audio/System/Protocols/visa/Device/<type>/<model>/<dev>/Reading/MEASure_Frequency",
           "reading_direction": "out"
         },
         "unverified": true
@@ -5675,6 +5703,34 @@
             "command": "Get_Measure_Diode"
           },
           "reading_topic": "APK.audio/System/Protocols/visa/Device/<type>/<model>/<dev>/Reading/Get_Measure_Diode",
+          "reading_direction": "out"
+        },
+        "unverified": true
+      },
+      "MEASure_Frequency": {
+        "command": "MEASure_Frequency",
+        "verb": "nab",
+        "description": "Measure frequency, autoranged, default resolution",
+        "scpi": "MEASure:FREQuency?",
+        "scpi_fast": "MEAS:FREQ?",
+        "subsystem": "MEASure",
+        "group": "Configure and Measure immediately",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": {
+          "count": 1,
+          "type": "NR3",
+          "unit": "Hz"
+        },
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/MEASure_Frequency",
+          "direction": "in",
+          "payload_format": {
+            "command": "MEASure_Frequency"
+          },
+          "reading_topic": "APK.audio/System/Protocols/visa/Device/<type>/<model>/<dev>/Reading/MEASure_Frequency",
           "reading_direction": "out"
         },
         "unverified": true
