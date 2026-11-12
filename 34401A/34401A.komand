@@ -113,6 +113,34 @@
       ],
       "subsystem": "CALCulate"
     },
+    "Set_Limit_Lower": {
+      "scpi": ":CALCulate:LIMit:LOWer <value>",
+      "scpiFast": ":CALC:LIM:LOW <value>",
+      "description": "Set limit lower",
+      "arg": {
+        "kind": "unknown"
+      },
+      "args": [
+        "value"
+      ],
+      "subsystem": "LIM",
+      "unverified": true,
+      "notes": "Was `:LIMit:LOWer <value>`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11)."
+    },
+    "Set_Limit_Upper": {
+      "scpi": ":CALCulate:LIMit:UPPer <value>",
+      "scpiFast": ":CALC:LIM:UPP <value>",
+      "description": "Set limit upper",
+      "arg": {
+        "kind": "unknown"
+      },
+      "args": [
+        "value"
+      ],
+      "subsystem": "LIM",
+      "unverified": true,
+      "notes": "Was `:LIMit:UPPer <value>`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11)."
+    },
     "Set_Null_Offset": {
       "scpi": ":CALCulate:NULL:OFFSet <value>",
       "scpiFast": ":CALC:NULL:OFFS <value>",
@@ -126,6 +154,22 @@
         "value"
       ],
       "subsystem": "CALCulate"
+    },
+    "Set_Null_Offset_Alt": {
+      "scpi": ":CALCulate:NULL:OFFSet <value>",
+      "scpiFast": ":CALC:NULL:OFFS <value>",
+      "description": "Math Operation Commands",
+      "arg": {
+        "kind": "numeric",
+        "limits": "query"
+      },
+      "args": [
+        "value"
+      ],
+      "subsystem": "NULL",
+      "unverified": true,
+      "notes": "Was `:NULL:OFFSet <value>`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Set_Null_Offset"
     },
     "Enable_Math": {
       "scpi": ":CALCulate:STATe <state>",
@@ -160,6 +204,25 @@
       ],
       "subsystem": "CAL",
       "unverified": true
+    },
+    "Set_Secure_State": {
+      "scpi": ":CALibration:SECure:STATe <value>",
+      "scpiFast": ":CAL:SEC:STAT <value>",
+      "description": "Calibration Commands",
+      "arg": {
+        "kind": "bool",
+        "values": [
+          "OFF",
+          "ON"
+        ]
+      },
+      "args": [
+        "value"
+      ],
+      "subsystem": "SEC",
+      "unverified": true,
+      "notes": "Was `:SECure:STATe <value>`: the table generator cut the `CALibration` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Set_Calibration_Secure_State"
     },
     "Set_Calibration_String": {
       "scpi": "CALibration:STRing <value>",
@@ -354,46 +417,6 @@
       ],
       "subsystem": "SENSe"
     },
-    "Set_Limit_Lower": {
-      "scpi": ":LIMit:LOWer <value>",
-      "scpiFast": ":LIM:LOW <value>",
-      "description": "Set limit lower",
-      "arg": {
-        "kind": "unknown"
-      },
-      "args": [
-        "value"
-      ],
-      "subsystem": "LIM",
-      "unverified": true
-    },
-    "Set_Limit_Upper": {
-      "scpi": ":LIMit:UPPer <value>",
-      "scpiFast": ":LIM:UPP <value>",
-      "description": "Set limit upper",
-      "arg": {
-        "kind": "unknown"
-      },
-      "args": [
-        "value"
-      ],
-      "subsystem": "LIM",
-      "unverified": true
-    },
-    "Set_Null_Offset_Alt": {
-      "scpi": ":NULL:OFFSet <value>",
-      "scpiFast": ":NULL:OFFS <value>",
-      "description": "Math Operation Commands",
-      "arg": {
-        "kind": "numeric",
-        "limits": "query"
-      },
-      "args": [
-        "value"
-      ],
-      "subsystem": "NULL",
-      "unverified": true
-    },
     "Set_Period_Aperture": {
       "scpi": "PERiod:APERture <value>",
       "scpiFast": "PER:APER <value>",
@@ -423,20 +446,6 @@
         "value"
       ],
       "subsystem": "PER",
-      "unverified": true
-    },
-    "Set_Questionable_Enable": {
-      "scpi": ":QUEStionable:ENABle <value>",
-      "scpiFast": ":QUES:ENAB <value>",
-      "description": "Status Reporting Commands",
-      "arg": {
-        "kind": "integer",
-        "limits": "query"
-      },
-      "args": [
-        "value"
-      ],
-      "subsystem": "QUES",
       "unverified": true
     },
     "Set_Rang": {
@@ -508,23 +517,6 @@
       ],
       "subsystem": "TRIGger"
     },
-    "Set_Secure_State": {
-      "scpi": ":SECure:STATe <value>",
-      "scpiFast": ":SEC:STAT <value>",
-      "description": "Calibration Commands",
-      "arg": {
-        "kind": "bool",
-        "values": [
-          "OFF",
-          "ON"
-        ]
-      },
-      "args": [
-        "value"
-      ],
-      "subsystem": "SEC",
-      "unverified": true
-    },
     "Set_Sens_Volt_Nplc": {
       "scpi": "SENS:VOLT:NPLC <value>",
       "description": "Authored from a panel literal in DMM.json; never executed before.",
@@ -533,20 +525,24 @@
       "retired_because": "HP 34401A User's Guide 34401-90004 (https://www.manualslib.com/manual/578999/Hp-34401a.html) p. 122: <function>:NPLCycles {0.02|0.2|1|10|100|MIN|MAX} per function (VOLTage:DC, not VOLTage); SENS:VOLT:NPLC names no function"
     },
     "Set_AC_Bandwidth": {
-      "scpi": ":SENSe:VOLTage:AC:BANDwidth <filter>",
-      "scpiFast": ":SENS:VOLT:AC:BAND <filter>",
+      "scpi": ":SENSe:DETector:BANDwidth <filter>",
+      "scpiFast": ":SENS:DET:BAND <filter>",
       "description": "Set AC Bandwidth",
       "arg": {
-        "kind": "numeric",
-        "unit": "V",
-        "domain": "volt",
-        "limits": "query"
+        "kind": "enum",
+        "values": [
+          "3",
+          "20",
+          "200"
+        ],
+        "unit": "Hz"
       },
       "group": "Measurement Parameters",
       "args": [
         "filter"
       ],
-      "subsystem": "SENSe"
+      "subsystem": "SENSe",
+      "notes": "Was `:SENSe:VOLTage:AC:BANDwidth <filter>`: the 34401A has no VOLTage:AC:BANDwidth — the bench answered -113 \"Undefined header\" to `:SENSe:VOLTage:AC:BANDwidth?` six times; the AC filter is `[SENSe:]DETector:BANDwidth {3|20|200}` (34401-90004 Ch. 4, p. 108), the node `Set_Detector_Bandwidth` already sets."
     },
     "Set_Integration_NPLC": {
       "scpi": ":SENSe:VOLTage:DC:NPLC <nplc>",
@@ -597,6 +593,21 @@
       ],
       "subsystem": "Panel"
     },
+    "Set_Questionable_Enable": {
+      "scpi": ":STATus:QUEStionable:ENABle <value>",
+      "scpiFast": ":STAT:QUES:ENAB <value>",
+      "description": "Status Reporting Commands",
+      "arg": {
+        "kind": "integer",
+        "limits": "query"
+      },
+      "args": [
+        "value"
+      ],
+      "subsystem": "QUES",
+      "unverified": true,
+      "notes": "Was `:QUEStionable:ENABle <value>`: the table generator cut the `STATus` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11)."
+    },
     "Set_State_Questionable_Enable": {
       "scpi": "STATus:QUEStionable:ENABle <value>",
       "scpiFast": "STAT:QUES:ENAB <value>",
@@ -609,7 +620,8 @@
         "value"
       ],
       "subsystem": "STAT",
-      "unverified": true
+      "unverified": true,
+      "alias_of": "Set_Questionable_Enable"
     },
     "Set_System_Beeper_State": {
       "scpi": "SYSTem:BEEPer:STATe <value>",
@@ -728,7 +740,9 @@
       "scpi": "BACK:GOTO",
       "description": "Using the Status Registers",
       "subsystem": "BACK",
-      "unverified": true
+      "unverified": true,
+      "retired": true,
+      "retired_because": "Retired: the 34401A manual (34401-90004 Ch. 4 SCPI Command Summary) has no such command — `BACK:GOTO` is two words of the \"Using the Status Registers\" prose the scraper read as a header."
     },
     "Do_Calibration_Secure": {
       "scpi": "CALibration:SECure",
@@ -743,6 +757,15 @@
       "description": "Calibration Overview",
       "subsystem": "CAL",
       "unverified": true
+    },
+    "Do_Secure_Code": {
+      "scpi": ":CALibration:SECure:CODE",
+      "scpiFast": ":CAL:SEC:CODE",
+      "description": "Calibration Commands",
+      "subsystem": "SEC",
+      "unverified": true,
+      "notes": "Was `:SECure:CODE`: the table generator cut the `CALibration` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Do_Calibration_Secure_Code"
     },
     "Do_Configure_Frequency": {
       "scpi": "CONF:FREQ",
@@ -830,7 +853,9 @@
       "scpi": "DCV:DCV",
       "description": "Do dcv dcv",
       "subsystem": "DCV",
-      "unverified": true
+      "unverified": true,
+      "retired": true,
+      "retired_because": "Retired: the 34401A manual (34401-90004 Ch. 4 SCPI Command Summary) has no such command — `DCV:DCV` is not a SCPI header; DC volts is `CONFigure:VOLTage:DC` / `MEASure:VOLTage:DC?`."
     },
     "Clear_Display": {
       "scpi": ":DISPlay:TEXT:CLEar",
@@ -838,6 +863,15 @@
       "description": "Clear Display",
       "group": "System Utilities",
       "subsystem": "SYSTem"
+    },
+    "Do_Text_Clear": {
+      "scpi": ":DISPlay:TEXT:CLEar",
+      "scpiFast": ":DISP:TEXT:CLE",
+      "description": "System-Related Commands",
+      "subsystem": "TEXT",
+      "unverified": true,
+      "notes": "Was `:TEXT:CLEar`: the table generator cut the `DISPlay` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Clear_Display"
     },
     "Do_Frequency_Voltage": {
       "scpi": "FREQuency:VOLTage",
@@ -858,13 +892,6 @@
       "scpiFast": "PER:VOLT",
       "description": "Do period voltage",
       "subsystem": "PER",
-      "unverified": true
-    },
-    "Do_Secure_Code": {
-      "scpi": ":SECure:CODE",
-      "scpiFast": ":SEC:CODE",
-      "description": "Calibration Commands",
-      "subsystem": "SEC",
       "unverified": true
     },
     "Do_Sense_Function": {
@@ -923,13 +950,6 @@
       "subsystem": "SYST",
       "unverified": true
     },
-    "Do_Text_Clear": {
-      "scpi": ":TEXT:CLEar",
-      "scpiFast": ":TEXT:CLE",
-      "description": "System-Related Commands",
-      "subsystem": "TEXT",
-      "unverified": true
-    },
     "Do_Trigger_Source_Immediate": {
       "scpi": "TRIGger:SOURce:IMMediate",
       "scpiFast": "TRIG:SOUR:IMM",
@@ -980,7 +1000,9 @@
         "probe_type",
         "sensor_type"
       ],
-      "subsystem": "CONFigure"
+      "subsystem": "CONFigure",
+      "retired": true,
+      "retired_because": "Retired: the 34401A manual (34401-90004 Ch. 4 SCPI Command Summary) has no such command — the 34401A measures no temperature: CONFigure has VOLTage, CURRent, RESistance, FRESistance, FREQuency, PERiod, CONTinuity and DIODe only."
     },
     "Config_AC_Volts": {
       "scpi": ":CONFigure:VOLTage:AC <range>,<resolution>",
@@ -1099,26 +1121,16 @@
       "unverified": true
     },
     "Get_Average_Average": {
-      "scpi": ":AVERage:AVERage?",
-      "scpiFast": ":AVER:AVER?",
+      "scpi": ":CALCulate:AVERage:AVERage?",
+      "scpiFast": ":CALC:AVER:AVER?",
       "description": "Math Operation Commands",
       "returns": {
         "count": 1,
-        "type": "NR1"
+        "type": "NR3"
       },
       "subsystem": "AVER",
-      "unverified": true
-    },
-    "Get_Average_Count": {
-      "scpi": ":AVERage:COUNt?",
-      "scpiFast": ":AVER:COUN?",
-      "description": "Math Operation Commands",
-      "returns": {
-        "count": 1,
-        "type": "NR1"
-      },
-      "subsystem": "AVER",
-      "unverified": true
+      "unverified": true,
+      "notes": "Was `:AVERage:AVERage?`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11). Returns NR3, as Query_Average."
     },
     "Query_Average": {
       "scpi": ":CALCulate:AVERage:AVERage?",
@@ -1126,10 +1138,24 @@
       "description": "Query Average",
       "returns": {
         "count": 1,
-        "type": "NR1"
+        "type": "NR3"
       },
       "group": "Statistics and Calc Results",
-      "subsystem": "CALCulate"
+      "subsystem": "CALCulate",
+      "alias_of": "Get_Average_Average",
+      "notes": "Returns NR3: a reading (bench: +0.00000000E+00; 34401-90004 Ch. 4)."
+    },
+    "Get_Average_Count": {
+      "scpi": ":CALCulate:AVERage:COUNt?",
+      "scpiFast": ":CALC:AVER:COUN?",
+      "description": "Math Operation Commands",
+      "returns": {
+        "count": 1,
+        "type": "NR3"
+      },
+      "subsystem": "AVER",
+      "unverified": true,
+      "notes": "Was `:AVERage:COUNt?`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11). Returns NR3, as Get_Calculate_Average_Count (bench: +0.00000000E+00)."
     },
     "Get_Calculate_Average_Count": {
       "scpi": "CALCulate:AVERage:COUNt?",
@@ -1137,10 +1163,12 @@
       "description": "Math Operations",
       "returns": {
         "count": 1,
-        "type": "NR1"
+        "type": "NR3"
       },
       "subsystem": "CALC",
-      "unverified": true
+      "unverified": true,
+      "alias_of": "Get_Average_Count",
+      "notes": "Returns NR3: the 34401A answers every numeric query in exponent form (+0.00000000E+00 on the bench, Certify 2026-11; 34401-90004 Ch. 4 \"Output Data Formats\")."
     },
     "Query_Max": {
       "scpi": ":CALCulate:AVERage:MAXimum?",
@@ -1192,10 +1220,26 @@
       "description": "Get calculate db reference",
       "returns": {
         "count": 1,
-        "type": "CRD"
+        "type": "NR3",
+        "unit": "dBm"
       },
       "subsystem": "CALC",
-      "unverified": true
+      "unverified": true,
+      "notes": "Returns NR3 in dBm: CALCulate:DB:REFerence? answers the reference value (34401-90004 Ch. 4, Math Operation Commands), not a keyword."
+    },
+    "Get_Db_Reference": {
+      "scpi": ":CALCulate:DB:REFerence?",
+      "scpiFast": ":CALC:DB:REF?",
+      "description": "Math Operation Commands",
+      "returns": {
+        "count": 1,
+        "type": "NR3",
+        "unit": "dBm"
+      },
+      "subsystem": "DB",
+      "unverified": true,
+      "notes": "Was `:DB:REFerence?`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11). Returns NR3 in dBm: CALCulate:DB:REFerence? answers the reference value (34401-90004 Ch. 4, Math Operation Commands), not a keyword.",
+      "alias_of": "Get_Calculate_Db_Reference"
     },
     "Get_Calculate_Function": {
       "scpi": "CALCulate:FUNCtion?",
@@ -1218,6 +1262,18 @@
       "subsystem": "CALC",
       "unverified": true
     },
+    "Get_Limit_Lower": {
+      "scpi": ":CALCulate:LIMit:LOWer?",
+      "scpiFast": ":CALC:LIM:LOW?",
+      "description": "Get limit lower",
+      "returns": {
+        "count": 1
+      },
+      "subsystem": "LIM",
+      "unverified": true,
+      "notes": "Was `:LIMit:LOWer?`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Get_Calculate_Limit_Lower"
+    },
     "Get_Calculate_Limit_Upper": {
       "scpi": "CALCulate:LIMit:UPPer?",
       "scpiFast": "CALC:LIM:UPP?",
@@ -1227,6 +1283,18 @@
       },
       "subsystem": "CALC",
       "unverified": true
+    },
+    "Get_Limit_Upper": {
+      "scpi": ":CALCulate:LIMit:UPPer?",
+      "scpiFast": ":CALC:LIM:UPP?",
+      "description": "Get limit upper",
+      "returns": {
+        "count": 1
+      },
+      "subsystem": "LIM",
+      "unverified": true,
+      "notes": "Was `:LIMit:UPPer?`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Get_Calculate_Limit_Upper"
     },
     "Get_Calculate_Null_Offset": {
       "scpi": "CALCulate:NULL:OFFSet?",
@@ -1238,6 +1306,19 @@
       },
       "subsystem": "CALC",
       "unverified": true
+    },
+    "Get_Null_Offset": {
+      "scpi": ":CALCulate:NULL:OFFSet?",
+      "scpiFast": ":CALC:NULL:OFFS?",
+      "description": "Math Operation Commands",
+      "returns": {
+        "count": 1,
+        "type": "NR3"
+      },
+      "subsystem": "NULL",
+      "unverified": true,
+      "notes": "Was `:NULL:OFFSet?`: the table generator cut the `CALCulate` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Get_Calculate_Null_Offset"
     },
     "Get_Calculate_State": {
       "scpi": "CALCulate:STATe?",
@@ -1271,6 +1352,19 @@
       },
       "subsystem": "CAL",
       "unverified": true
+    },
+    "Get_Secure_State": {
+      "scpi": ":CALibration:SECure:STATe?",
+      "scpiFast": ":CAL:SEC:STAT?",
+      "description": "Calibration Commands",
+      "returns": {
+        "count": 1,
+        "type": "BOOL"
+      },
+      "subsystem": "SEC",
+      "unverified": true,
+      "notes": "Was `:SECure:STATe?`: the table generator cut the `CALibration` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
+      "alias_of": "Get_Calibration_Secure_State"
     },
     "Get_Calibration_String": {
       "scpi": "CALibration:STRing?",
@@ -1311,17 +1405,6 @@
         "type": "NR1"
       },
       "subsystem": "DATA",
-      "unverified": true
-    },
-    "Get_Db_Reference": {
-      "scpi": ":DB:REFerence?",
-      "scpiFast": ":DB:REF?",
-      "description": "Math Operation Commands",
-      "returns": {
-        "count": 1,
-        "type": "CRD"
-      },
-      "subsystem": "DB",
       "unverified": true
     },
     "Get_Detector_Bandwidth": {
@@ -1382,10 +1465,11 @@
       "description": "Get fresistance nplcycles",
       "returns": {
         "count": 1,
-        "type": "NR1"
+        "type": "NR3"
       },
       "subsystem": "FRES",
-      "unverified": true
+      "unverified": true,
+      "notes": "Returns NR3 (bench: +1.00000000E+01)."
     },
     "Get_Fresistance_Range": {
       "scpi": "FRESistance:RANGe?",
@@ -1441,36 +1525,18 @@
       },
       "notes": "One round trip, because the two facts have to agree: asking the function and the value separately lets the function change between them, and a number labelled with the previous function is worse than an unlabelled one. The chained query restarts at the root — see Measure_All on the 6060B for what happens when it does not. Verified on the 34401A at 44.44.44.111 gpib7,4: answers \"VOLT\";+1.00199800E-03 with a clean error queue. Note the reply is the SHORT form — DC volts answers \"VOLT\", not \"VOLT:DC\" — while FUNCtion accepts either when setting."
     },
-    "Get_Limit_Lower": {
-      "scpi": ":LIMit:LOWer?",
-      "scpiFast": ":LIM:LOW?",
-      "description": "Get limit lower",
-      "returns": {
-        "count": 1
-      },
-      "subsystem": "LIM",
-      "unverified": true
-    },
-    "Get_Limit_Upper": {
-      "scpi": ":LIMit:UPPer?",
-      "scpiFast": ":LIM:UPP?",
-      "description": "Get limit upper",
-      "returns": {
-        "count": 1
-      },
-      "subsystem": "LIM",
-      "unverified": true
-    },
     "Get_Measure_Continuity": {
       "scpi": "MEASure:CONTinuity?",
       "scpiFast": "MEAS:CONT?",
       "description": "The MEASure? and CONFigure Commands",
       "returns": {
         "count": 1,
-        "type": "BOOL"
+        "type": "NR3",
+        "unit": "Ω"
       },
       "subsystem": "MEAS",
-      "unverified": true
+      "unverified": true,
+      "notes": "Returns NR3: a resistance reading, 9.90000000E+37 when open (bench, Certify 2026-11; 34401-90004 Ch. 4: an overload or infinite value reads 9.90000000E+37) — not a 0/1 state."
     },
     "Measure_DC_Current": {
       "scpi": ":MEASure:CURRent:DC? <range>,<resolution>",
@@ -1631,17 +1697,6 @@
       },
       "alias_of": "MEASure_Voltage_DC"
     },
-    "Get_Null_Offset": {
-      "scpi": ":NULL:OFFSet?",
-      "scpiFast": ":NULL:OFFS?",
-      "description": "Math Operation Commands",
-      "returns": {
-        "count": 1,
-        "type": "NR3"
-      },
-      "subsystem": "NULL",
-      "unverified": true
-    },
     "Get_Period_Aperture": {
       "scpi": "PERiod:APERture?",
       "scpiFast": "PER:APER?",
@@ -1666,28 +1721,6 @@
       "subsystem": "PER",
       "unverified": true
     },
-    "Get_Questionable_Enable": {
-      "scpi": ":QUEStionable:ENABle?",
-      "scpiFast": ":QUES:ENAB?",
-      "description": "Status Reporting Commands",
-      "returns": {
-        "count": 1,
-        "type": "NR1"
-      },
-      "subsystem": "QUES",
-      "unverified": true
-    },
-    "Get_Questionable_Event": {
-      "scpi": ":QUEStionable:EVENt?",
-      "scpiFast": ":QUES:EVEN?",
-      "description": "Status Reporting Commands",
-      "returns": {
-        "count": 1,
-        "type": "NR1"
-      },
-      "subsystem": "QUES",
-      "unverified": true
-    },
     "Get_Read_All": {
       "scpi": "READ:ALL?",
       "description": "Authored from a panel literal in DMM_N.json; never executed before.",
@@ -1710,10 +1743,11 @@
       "description": "Get resolution nplcycles",
       "returns": {
         "count": 1,
-        "type": "NR1"
+        "type": "NR3"
       },
       "subsystem": "RES",
-      "unverified": true
+      "unverified": true,
+      "notes": "Returns NR3 (bench: +1.00000000E+01)."
     },
     "Get_Resolution_Range": {
       "scpi": "RESistance:RANGe?",
@@ -1757,16 +1791,17 @@
       "subsystem": "SAMP",
       "unverified": true
     },
-    "Get_Secure_State": {
-      "scpi": ":SECure:STATe?",
-      "scpiFast": ":SEC:STAT?",
-      "description": "Calibration Commands",
+    "Get_Questionable_Enable": {
+      "scpi": ":STATus:QUEStionable:ENABle?",
+      "scpiFast": ":STAT:QUES:ENAB?",
+      "description": "Status Reporting Commands",
       "returns": {
         "count": 1,
-        "type": "BOOL"
+        "type": "NR1"
       },
-      "subsystem": "SEC",
-      "unverified": true
+      "subsystem": "QUES",
+      "unverified": true,
+      "notes": "Was `:QUEStionable:ENABle?`: the table generator cut the `STATus` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11)."
     },
     "Get_State_Questionable_Enable": {
       "scpi": "STATus:QUEStionable:ENABle?",
@@ -1777,7 +1812,20 @@
         "type": "NR1"
       },
       "subsystem": "STAT",
-      "unverified": true
+      "unverified": true,
+      "alias_of": "Get_Questionable_Enable"
+    },
+    "Get_Questionable_Event": {
+      "scpi": ":STATus:QUEStionable:EVENt?",
+      "scpiFast": ":STAT:QUES:EVEN?",
+      "description": "Status Reporting Commands",
+      "returns": {
+        "count": 1,
+        "type": "NR1"
+      },
+      "subsystem": "QUES",
+      "unverified": true,
+      "notes": "Was `:QUEStionable:EVENt?`: the table generator cut the `STATus` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11)."
     },
     "Get_State_Questionable_Event": {
       "scpi": "STATus:QUEStionable:EVENt?",
@@ -1788,7 +1836,8 @@
         "type": "NR1"
       },
       "subsystem": "STAT",
-      "unverified": true
+      "unverified": true,
+      "alias_of": "Get_Questionable_Event"
     },
     "Get_System_Beeper_State": {
       "scpi": "SYSTem:BEEPer:STATe?",
@@ -1827,10 +1876,11 @@
       "description": "Get trigger count",
       "returns": {
         "count": 1,
-        "type": "NR1"
+        "type": "NR3"
       },
       "subsystem": "TRIG",
-      "unverified": true
+      "unverified": true,
+      "notes": "Returns NR3 (bench: +1.00000000E+00)."
     },
     "Get_Trigger_Delay": {
       "scpi": "TRIGger:DELay?",

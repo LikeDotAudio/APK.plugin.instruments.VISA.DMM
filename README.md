@@ -16,21 +16,21 @@ The **DMM** instruments of the APK.audio bench, as one thing: 15 models, their c
 
 | Model | Maker | What | Commands | Table | API |
 |---|---|---|---:|:---:|---|
-| [2000](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/2000.md) | Keithley | 6.5 Digit Multimeter (Legacy) | 155 |  | :15400 |
-| [34401A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34401A.md) | HP / Agilent / Keysight | 6.5 Digit Benchtop Standard (Legacy) | 156 | ✅ | :15401 |
-| [34410A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34410A.md) | HP / Agilent / Keysight | 6.5 Digit High Performance | 155 |  | :15402 |
-| [34411A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34411A.md) | HP / Agilent / Keysight | 6.5 Digit Enhanced Performance | 155 |  | :15403 |
-| [34420A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34420A.md) | HP / Agilent / Keysight | Nano-volt / Micro-ohm Meter | 155 |  | :15404 |
-| [34450A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34450A.md) | HP / Agilent / Keysight | 5.5 Digit Dual Display | 155 |  | :15405 |
-| [34460A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34460A.md) | HP / Agilent / Keysight | 6.5 Digit Truevolt (Basic) | 155 |  | :15406 |
-| [34461A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34461A.md) | HP / Agilent / Keysight | 6.5 Digit Truevolt (34401A Replacement) | 155 |  | :15407 |
-| [34465A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34465A.md) | HP / Agilent / Keysight | 6.5 Digit Performance Truevolt | 155 |  | :15408 |
-| [34470A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34470A.md) | HP / Agilent / Keysight | 7.5 Digit Truevolt | 155 |  | :15409 |
-| [3458A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/3458A.md) | HP / Agilent / Keysight | 8.5 Digit Industrial Standard | 155 |  | :15410 |
-| [DM3058](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/DM3058.md) | Rigol | 5.5 Digit Benchtop | 155 |  | :15411 |
-| [DM3068](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/DM3068.md) | Rigol | 6.5 Digit Benchtop | 155 |  | :15412 |
-| [DMM6500](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/DMM6500.md) | Keithley | 6.5 Digit Touchscreen | 155 |  | :15413 |
-| [U1272A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/U1272A.md) | HP / Agilent / Keysight | Handheld 4.5 Digit, Water/Dust Resistant | 155 |  | :15414 |
+| [2000](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/2000.md) | Keithley | 6.5 Digit Multimeter (Legacy) | 152 |  | :15400 |
+| [34401A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34401A.md) | HP / Agilent / Keysight | 6.5 Digit Benchtop Standard (Legacy) | 153 | ✅ | :15401 |
+| [34410A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34410A.md) | HP / Agilent / Keysight | 6.5 Digit High Performance | 152 |  | :15402 |
+| [34411A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34411A.md) | HP / Agilent / Keysight | 6.5 Digit Enhanced Performance | 152 |  | :15403 |
+| [34420A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34420A.md) | HP / Agilent / Keysight | Nano-volt / Micro-ohm Meter | 152 |  | :15404 |
+| [34450A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34450A.md) | HP / Agilent / Keysight | 5.5 Digit Dual Display | 152 |  | :15405 |
+| [34460A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34460A.md) | HP / Agilent / Keysight | 6.5 Digit Truevolt (Basic) | 152 |  | :15406 |
+| [34461A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34461A.md) | HP / Agilent / Keysight | 6.5 Digit Truevolt (34401A Replacement) | 152 |  | :15407 |
+| [34465A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34465A.md) | HP / Agilent / Keysight | 6.5 Digit Performance Truevolt | 152 |  | :15408 |
+| [34470A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/34470A.md) | HP / Agilent / Keysight | 7.5 Digit Truevolt | 152 |  | :15409 |
+| [3458A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/3458A.md) | HP / Agilent / Keysight | 8.5 Digit Industrial Standard | 152 |  | :15410 |
+| [DM3058](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/DM3058.md) | Rigol | 5.5 Digit Benchtop | 152 |  | :15411 |
+| [DM3068](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/DM3068.md) | Rigol | 6.5 Digit Benchtop | 152 |  | :15412 |
+| [DMM6500](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/DMM6500.md) | Keithley | 6.5 Digit Touchscreen | 152 |  | :15413 |
+| [U1272A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/U1272A.md) | HP / Agilent / Keysight | Handheld 4.5 Digit, Water/Dust Resistant | 152 |  | :15414 |
 
 ## Layout
 

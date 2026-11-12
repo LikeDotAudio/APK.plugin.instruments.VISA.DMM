@@ -1,0 +1,39 @@
+{
+  "model": "34401A",
+  "manual": "HP 34401A User's Guide 34401-90004 (Feb 1996), Chapter 4 Remote Interface Reference, SCPI Command Summary pp. 104-111; [SENSe:] is the default node",
+  "roots": [
+    "MEASure",
+    "CONFigure",
+    "READ",
+    "FETCh",
+    "INITiate",
+    "CALCulate",
+    "TRIGger",
+    "SAMPle",
+    "INPut",
+    "ROUTe",
+    "DATA",
+    "DISPlay",
+    "SYSTem",
+    "STATus",
+    "CALibration",
+    "SENSe",
+    "FUNCtion",
+    "VOLTage",
+    "CURRent",
+    "RESistance",
+    "FRESistance",
+    "FREQuency",
+    "PERiod",
+    "DETector",
+    "ZERO",
+    "ABORt"
+  ],
+  "optional": [
+    "SENSe"
+  ],
+  "unresolved": {},
+  "bench": {
+    "ABORt": "not in 34401-90004, but the unit took `:ABORt` and then answered +0,\"No error\" (GUI certificate, MY-serial 34401A on ttyUSB, 2026-11)"
+  }
+}
