@@ -13,6 +13,7 @@ From this repository's own commits (the commit message is the record):
 - DMM trend: 15 min window — the log time axis compresses it (owner 2026-11-11) (`ca94dae`)
 - wiki: lanes, README and smoke result refreshed (wiki.py + smoke.py) (`299e7f8`)
 - DMM: the function dial opens on AUTO — SEEK looks, then says what is attached (owner 2026-11-12) (`d05f048`)
+- DMM.json: the trend files each reading under the meter's FUNCtion? answer too (ROAD-3742) (`118fcc0`)
 
 ## Releases
 - **Released `2.0.0`, tag `v2.0.0`** (2026-11-05, ROAD-3452, the owner's V2) — no SDK pin; every manifest says 2.0.0; GitHub release `v2.0.0`.
