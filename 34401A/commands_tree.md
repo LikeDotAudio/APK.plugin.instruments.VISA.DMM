@@ -4,7 +4,7 @@
 
 Generated from the `.komand` table by `apkaudio-komand build-trees`. Edit the table, not this file.
 
-**152 commands** — SET 42 · RIG 4 · NAB 73 · DO 33 · 100 unverified (65%)
+**204 commands** — SET 94 · RIG 4 · NAB 73 · DO 33 · 152 unverified (74%)
 
 `SET` one argument · `RIG` several applied together · `NAB` a query · `DO` a parameterless action. **†** marks a command swept out of a manual and never sent to the instrument.
 
@@ -22,6 +22,16 @@ Several statements in one message, so they hang off no single branch. Every stat
 ## Tree
 
 - `FUNCtion` — **SET** `Set_Func` · `"<value>"` · args: `value` · enum: `VOLT:DC` | `VOLT:AC` | `RES` | `FRES` | `FREQ` | `PER` | `CONT` | `DIOD` | `CURR:DC` | `CURR:AC`<br>Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_CONT` · `"CONT"` · †<br>Set_Func → CONT. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_CURR_AC` · `"CURR:AC"` · †<br>Set_Func → CURR:AC. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_CURR_DC` · `"CURR:DC"` · †<br>Set_Func → CURR:DC. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_DIOD` · `"DIOD"` · †<br>Set_Func → DIOD. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_FREQ` · `"FREQ"` · †<br>Set_Func → FREQ. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_FRES` · `"FRES"` · †<br>Set_Func → FRES. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_PER` · `"PER"` · †<br>Set_Func → PER. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_RES` · `"RES"` · †<br>Set_Func → RES. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_VOLT_AC` · `"VOLT:AC"` · †<br>Set_Func → VOLT:AC. Select the measurement function
+- `FUNCtion` — **SET** `Set_Func_VOLT_DC` · `"VOLT:DC"` · †<br>Set_Func → VOLT:DC. Select the measurement function
 - `FETCh?` — **NAB** `Fetch_Existing` · → 1 value
 - `FUNCtion?` — **NAB** `Get_Func` · → CRD<br>Which measurement function is selected
 - `READ?` — **NAB** `Read_Next` · → 1 value
@@ -29,7 +39,14 @@ Several statements in one message, so they hang off no single branch. Every stat
 - `INITiate` — **DO** `Initiate`
 - **`CALCulate`**
   - `STATe` — **SET** `Enable_Math` · `<state>` · args: `state` · bool: `OFF` | `ON`
+  - `STATe` — **SET** `Enable_Math_OFF` · `OFF` · †<br>Enable_Math → OFF. Enable Math
+  - `STATe` — **SET** `Enable_Math_ON` · `ON` · †<br>Enable_Math → ON. Enable Math
   - `FUNCtion` — **SET** `Set_Math_Function` · `<function>` · args: `function` · enum: `NULL` | `DB` | `DBM` | `AVER` | `LIM`
+  - `FUNCtion` — **SET** `Set_Math_Function_AVER` · `AVER` · †<br>Set_Math_Function → AVER. Set Math Function
+  - `FUNCtion` — **SET** `Set_Math_Function_DB` · `DB` · †<br>Set_Math_Function → DB. Set Math Function
+  - `FUNCtion` — **SET** `Set_Math_Function_DBM` · `DBM` · †<br>Set_Math_Function → DBM. Set Math Function
+  - `FUNCtion` — **SET** `Set_Math_Function_LIM` · `LIM` · †<br>Set_Math_Function → LIM. Set Math Function
+  - `FUNCtion` — **SET** `Set_Math_Function_NULL` · `NULL` · †<br>Set_Math_Function → NULL. Set Math Function
   - `FUNCtion?` — **NAB** `Get_Calculate_Function` · → CRD · †
   - `STATe?` — **NAB** `Get_Calculate_State` · → BOOL · †
   - **`AVERage`**
@@ -45,6 +62,23 @@ Several statements in one message, so they hang off no single branch. Every stat
     - `REFerence?` — **NAB** `Get_Db_Reference` · → NR3 dBm · †<br>Math Operation Commands
   - **`DBM`**
     - `REFerence` — **SET** `Set_dBm_Ref` · `<value>` · args: `value` · enum: `50` | `75` | `93` | `110` | `124` | `125` | `135` | `150` | `250` | `300` | `500` | `600` | `800` | `900` | `1000` | `1200` | `8000`
+    - `REFerence` — **SET** `Set_dBm_Ref_1000` · `1000` · †<br>Set_dBm_Ref → 1000. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_110` · `110` · †<br>Set_dBm_Ref → 110. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_1200` · `1200` · †<br>Set_dBm_Ref → 1200. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_124` · `124` · †<br>Set_dBm_Ref → 124. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_125` · `125` · †<br>Set_dBm_Ref → 125. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_135` · `135` · †<br>Set_dBm_Ref → 135. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_150` · `150` · †<br>Set_dBm_Ref → 150. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_250` · `250` · †<br>Set_dBm_Ref → 250. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_300` · `300` · †<br>Set_dBm_Ref → 300. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_50` · `50` · †<br>Set_dBm_Ref → 50. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_500` · `500` · †<br>Set_dBm_Ref → 500. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_600` · `600` · †<br>Set_dBm_Ref → 600. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_75` · `75` · †<br>Set_dBm_Ref → 75. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_800` · `800` · †<br>Set_dBm_Ref → 800. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_8000` · `8000` · †<br>Set_dBm_Ref → 8000. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_900` · `900` · †<br>Set_dBm_Ref → 900. Set dBm Ref
+    - `REFerence` — **SET** `Set_dBm_Ref_93` · `93` · †<br>Set_dBm_Ref → 93. Set dBm Ref
   - **`LIMit`**
     - `LOWer` — **SET** `Set_Limit_Lower` · `<value>` · args: `value` · †
     - `UPPer` — **SET** `Set_Limit_Upper` · `<value>` · args: `value` · †
@@ -66,7 +100,11 @@ Several statements in one message, so they hang off no single branch. Every stat
   - `SECure` — **DO** `Do_Calibration_Secure` · †
   - **`SECure`**
     - `STATe` — **SET** `Set_Calibration_Secure_State` · `<value>` · args: `value` · bool: `OFF` | `ON` · †<br>Calibration Overview
+    - `STATe` — **SET** `Set_Calibration_Secure_State_OFF` · `OFF` · †<br>Set_Calibration_Secure_State → OFF. Calibration Overview
+    - `STATe` — **SET** `Set_Calibration_Secure_State_ON` · `ON` · †<br>Set_Calibration_Secure_State → ON. Calibration Overview
     - `STATe` — **SET** `Set_Secure_State` · `<value>` · args: `value` · bool: `OFF` | `ON` · †<br>Calibration Commands
+    - `STATe` — **SET** `Set_Secure_State_OFF` · `OFF` · †<br>Set_Secure_State → OFF. Calibration Commands
+    - `STATe` — **SET** `Set_Secure_State_ON` · `ON` · †<br>Set_Secure_State → ON. Calibration Commands
     - `STATe?` — **NAB** `Get_Calibration_Secure_State` · → BOOL · †<br>Calibration Overview
     - `STATe?` — **NAB** `Get_Secure_State` · → BOOL · †<br>Calibration Commands
     - `CODE` — **DO** `Do_Calibration_Secure_Code` · †<br>Calibration Overview
@@ -119,6 +157,8 @@ Several statements in one message, so they hang off no single branch. Every stat
 - **`INPut`**
   - **`IMPedance`**
     - `AUTO` — **SET** `Set_Input_Impedance` · `<state>` · args: `state` · bool: `OFF` | `ON`
+    - `AUTO` — **SET** `Set_Input_Impedance_OFF` · `OFF` · †<br>Set_Input_Impedance → OFF. Set Input Impedance
+    - `AUTO` — **SET** `Set_Input_Impedance_ON` · `ON` · †<br>Set_Input_Impedance → ON. Set Input Impedance
 - **`MEASure`**
   - `CONTinuity?` — **NAB** `Get_Measure_Continuity` · → NR3 Ω · †<br>The MEASure? and CONFigure Commands
   - `DIODe?` — **NAB** `Get_Measure_Diode` · → 1 value · †
@@ -158,12 +198,17 @@ Several statements in one message, so they hang off no single branch. Every stat
   - `FUNCtion` — **DO** `Do_Sense_Function` · †<br>Using the CONFigure Command
   - **`DETector`**
     - `BANDwidth` — **SET** `Set_AC_Bandwidth` · `<filter>` · args: `filter` · enum: `3` | `20` | `200`
+    - `BANDwidth` — **SET** `Set_AC_Bandwidth_20` · `20` · †<br>Set_AC_Bandwidth → 20. Set AC Bandwidth
+    - `BANDwidth` — **SET** `Set_AC_Bandwidth_200` · `200` · †<br>Set_AC_Bandwidth → 200. Set AC Bandwidth
+    - `BANDwidth` — **SET** `Set_AC_Bandwidth_3` · `3` · †<br>Set_AC_Bandwidth → 3. Set AC Bandwidth
   - **`VOLTage`**
     - **`DC`**
       - `RANGe` — **SET** `Set_DCV_Range` · `<range>` · args: `range` · numeric (V)
       - `NPLC` — **SET** `Set_Integration_NPLC` · `<nplc>` · args: `nplc` · integer (V)
       - **`RANGe`**
         - `AUTO` — **SET** `Set_Autorange` · `<state>` · args: `state` · bool: `OFF` | `ON`
+        - `AUTO` — **SET** `Set_Autorange_OFF` · `OFF` · †<br>Set_Autorange → OFF. Set Autorange
+        - `AUTO` — **SET** `Set_Autorange_ON` · `ON` · †<br>Set_Autorange → ON. Set Autorange
   - **`ZERO`**
     - `AUTO` — **DO** `Auto_Zero_OFF` · `OFF`
     - `AUTO` — **DO** `Auto_Zero_ON` · `ON`
@@ -185,11 +230,16 @@ Several statements in one message, so they hang off no single branch. Every stat
   - `RWLock` — **DO** `Do_System_Rwlock` · †<br>RS-232 Interface Commands
   - **`BEEPer`**
     - `STATe` — **SET** `Set_System_Beeper_State` · `<value>` · args: `value` · bool: `OFF` | `ON` · †<br>System-Related Commands
+    - `STATe` — **SET** `Set_System_Beeper_State_OFF` · `OFF` · †<br>Set_System_Beeper_State → OFF. System-Related Commands
+    - `STATe` — **SET** `Set_System_Beeper_State_ON` · `ON` · †<br>Set_System_Beeper_State → ON. System-Related Commands
     - `STATe?` — **NAB** `Get_System_Beeper_State` · → BOOL<br>System-Related Commands
 - **`TRIGger`**
   - `COUNt` — **SET** `Set_Trigger_Count` · `<count>` · args: `count` · integer
   - `DELay` — **SET** `Set_Trigger_Delay` · `<delay>` · args: `delay` · numeric (s)
   - `SOURce` — **SET** `Set_Trigger_Source` · `<source>` · args: `source` · enum: `BUS` | `IMM` | `EXT`
+  - `SOURce` — **SET** `Set_Trigger_Source_BUS` · `BUS` · †<br>Set_Trigger_Source → BUS. Set Trigger Source
+  - `SOURce` — **SET** `Set_Trigger_Source_EXT` · `EXT` · †<br>Set_Trigger_Source → EXT. Set Trigger Source
+  - `SOURce` — **SET** `Set_Trigger_Source_IMM` · `IMM` · †<br>Set_Trigger_Source → IMM. Set Trigger Source
   - `COUNt?` — **NAB** `Get_Trigger_Count` · → NR3 · †
   - `DELay?` — **NAB** `Get_Trigger_Delay` · → NR3 s · †
   - `SOURce?` — **NAB** `Get_Trigger_Source` · → CRD · †<br>Trigger Source Choices
@@ -215,6 +265,8 @@ Several statements in one message, so they hang off no single branch. Every stat
 - `*RST` — **DO** `Reset_Device`
 - `*ESE <value>` — **SET** `Set_Ese` · `<value>` · args: `value` · integer · †
 - `*PSC <value>` — **SET** `Set_Psc` · `<value>` · args: `value` · bool: `0` | `1` · †
+- `*PSC 0` — **SET** `Set_Psc_0` · `0` · †<br>Set_Psc → 0. Set psc
+- `*PSC 1` — **SET** `Set_Psc_1` · `1` · †<br>Set_Psc → 1. Set psc
 - `*SRE <value>` — **SET** `Set_Sre` · `<value>` · args: `value` · integer · †
 
 <!-- END GENERATED -->

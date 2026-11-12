@@ -85,9 +85,9 @@
     "do": "Zero-argument execution actions and trigger commands"
   },
   "summary": {
-    "total_commands": 153,
+    "total_commands": 205,
     "get_count": 71,
-    "set_count": 42,
+    "set_count": 94,
     "nab_count": 74,
     "rig_count": 4,
     "do_count": 33
@@ -2035,6 +2035,52 @@
         },
         "unverified": true
       },
+      "Set_Psc_0": {
+        "command": "Set_Psc_0",
+        "verb": "set",
+        "description": "Set_Psc \u2192 0. Set psc",
+        "scpi": "*PSC 0",
+        "subsystem": "Common",
+        "group": "Common",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Psc_0",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Psc_0",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Psc_1": {
+        "command": "Set_Psc_1",
+        "verb": "set",
+        "description": "Set_Psc \u2192 1. Set psc",
+        "scpi": "*PSC 1",
+        "subsystem": "Common",
+        "group": "Common",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Psc_1",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Psc_1",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
       "Set_Psc": {
         "command": "Set_Psc",
         "verb": "set",
@@ -2119,6 +2165,414 @@
         },
         "unverified": false
       },
+      "Set_dBm_Ref_1000": {
+        "command": "Set_dBm_Ref_1000",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 1000. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 1000",
+        "scpi_fast": ":CALC:DBM:REF 1000",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_1000",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_1000",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_110": {
+        "command": "Set_dBm_Ref_110",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 110. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 110",
+        "scpi_fast": ":CALC:DBM:REF 110",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_110",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_110",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_1200": {
+        "command": "Set_dBm_Ref_1200",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 1200. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 1200",
+        "scpi_fast": ":CALC:DBM:REF 1200",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_1200",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_1200",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_124": {
+        "command": "Set_dBm_Ref_124",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 124. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 124",
+        "scpi_fast": ":CALC:DBM:REF 124",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_124",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_124",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_125": {
+        "command": "Set_dBm_Ref_125",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 125. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 125",
+        "scpi_fast": ":CALC:DBM:REF 125",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_125",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_125",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_135": {
+        "command": "Set_dBm_Ref_135",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 135. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 135",
+        "scpi_fast": ":CALC:DBM:REF 135",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_135",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_135",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_150": {
+        "command": "Set_dBm_Ref_150",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 150. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 150",
+        "scpi_fast": ":CALC:DBM:REF 150",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_150",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_150",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_250": {
+        "command": "Set_dBm_Ref_250",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 250. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 250",
+        "scpi_fast": ":CALC:DBM:REF 250",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_250",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_250",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_300": {
+        "command": "Set_dBm_Ref_300",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 300. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 300",
+        "scpi_fast": ":CALC:DBM:REF 300",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_300",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_300",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_50": {
+        "command": "Set_dBm_Ref_50",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 50. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 50",
+        "scpi_fast": ":CALC:DBM:REF 50",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_50",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_50",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_500": {
+        "command": "Set_dBm_Ref_500",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 500. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 500",
+        "scpi_fast": ":CALC:DBM:REF 500",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_500",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_500",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_600": {
+        "command": "Set_dBm_Ref_600",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 600. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 600",
+        "scpi_fast": ":CALC:DBM:REF 600",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_600",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_600",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_75": {
+        "command": "Set_dBm_Ref_75",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 75. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 75",
+        "scpi_fast": ":CALC:DBM:REF 75",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_75",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_75",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_800": {
+        "command": "Set_dBm_Ref_800",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 800. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 800",
+        "scpi_fast": ":CALC:DBM:REF 800",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_800",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_800",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_8000": {
+        "command": "Set_dBm_Ref_8000",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 8000. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 8000",
+        "scpi_fast": ":CALC:DBM:REF 8000",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_8000",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_8000",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_900": {
+        "command": "Set_dBm_Ref_900",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 900. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 900",
+        "scpi_fast": ":CALC:DBM:REF 900",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_900",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_900",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_dBm_Ref_93": {
+        "command": "Set_dBm_Ref_93",
+        "verb": "set",
+        "description": "Set_dBm_Ref \u2192 93. Set dBm Ref",
+        "scpi": ":CALCulate:DBM:REFerence 93",
+        "scpi_fast": ":CALC:DBM:REF 93",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_dBm_Ref_93",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_dBm_Ref_93",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
       "Set_dBm_Ref": {
         "command": "Set_dBm_Ref",
         "verb": "set",
@@ -2197,6 +2651,126 @@
           }
         },
         "unverified": false
+      },
+      "Set_Math_Function_AVER": {
+        "command": "Set_Math_Function_AVER",
+        "verb": "set",
+        "description": "Set_Math_Function \u2192 AVER. Set Math Function",
+        "scpi": ":CALCulate:FUNCtion AVER",
+        "scpi_fast": ":CALC:FUNC AVER",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Math_Function_AVER",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Math_Function_AVER",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Math_Function_DB": {
+        "command": "Set_Math_Function_DB",
+        "verb": "set",
+        "description": "Set_Math_Function \u2192 DB. Set Math Function",
+        "scpi": ":CALCulate:FUNCtion DB",
+        "scpi_fast": ":CALC:FUNC DB",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Math_Function_DB",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Math_Function_DB",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Math_Function_DBM": {
+        "command": "Set_Math_Function_DBM",
+        "verb": "set",
+        "description": "Set_Math_Function \u2192 DBM. Set Math Function",
+        "scpi": ":CALCulate:FUNCtion DBM",
+        "scpi_fast": ":CALC:FUNC DBM",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Math_Function_DBM",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Math_Function_DBM",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Math_Function_LIM": {
+        "command": "Set_Math_Function_LIM",
+        "verb": "set",
+        "description": "Set_Math_Function \u2192 LIM. Set Math Function",
+        "scpi": ":CALCulate:FUNCtion LIM",
+        "scpi_fast": ":CALC:FUNC LIM",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Math_Function_LIM",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Math_Function_LIM",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Math_Function_NULL": {
+        "command": "Set_Math_Function_NULL",
+        "verb": "set",
+        "description": "Set_Math_Function \u2192 NULL. Set Math Function",
+        "scpi": ":CALCulate:FUNCtion NULL",
+        "scpi_fast": ":CALC:FUNC NULL",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Math_Function_NULL",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Math_Function_NULL",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
       },
       "Set_Limit_Lower": {
         "command": "Set_Limit_Lower",
@@ -2334,6 +2908,54 @@
         },
         "unverified": false
       },
+      "Enable_Math_OFF": {
+        "command": "Enable_Math_OFF",
+        "verb": "set",
+        "description": "Enable_Math \u2192 OFF. Enable Math",
+        "scpi": ":CALCulate:STATe OFF",
+        "scpi_fast": ":CALC:STAT OFF",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Enable_Math_OFF",
+          "direction": "in",
+          "payload_format": {
+            "command": "Enable_Math_OFF",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Enable_Math_ON": {
+        "command": "Enable_Math_ON",
+        "verb": "set",
+        "description": "Enable_Math \u2192 ON. Enable Math",
+        "scpi": ":CALCulate:STATe ON",
+        "scpi_fast": ":CALC:STAT ON",
+        "subsystem": "CALCulate",
+        "group": "Math and Limits Setup",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Enable_Math_ON",
+          "direction": "in",
+          "payload_format": {
+            "command": "Enable_Math_ON",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
       "Set_Calibration_Secure_State": {
         "command": "Set_Calibration_Secure_State",
         "verb": "set",
@@ -2388,6 +3010,102 @@
           "direction": "in",
           "payload_format": {
             "command": "Set_Secure_State",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Calibration_Secure_State_OFF": {
+        "command": "Set_Calibration_Secure_State_OFF",
+        "verb": "set",
+        "description": "Set_Calibration_Secure_State \u2192 OFF. Calibration Overview",
+        "scpi": "CALibration:SECure:STATe OFF",
+        "scpi_fast": "CAL:SEC:STAT OFF",
+        "subsystem": "CAL",
+        "group": "CAL",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Calibration_Secure_State_OFF",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Calibration_Secure_State_OFF",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Secure_State_OFF": {
+        "command": "Set_Secure_State_OFF",
+        "verb": "set",
+        "description": "Set_Secure_State \u2192 OFF. Calibration Commands",
+        "scpi": ":CALibration:SECure:STATe OFF",
+        "scpi_fast": ":CAL:SEC:STAT OFF",
+        "subsystem": "SEC",
+        "group": "SEC",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Secure_State_OFF",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Secure_State_OFF",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Calibration_Secure_State_ON": {
+        "command": "Set_Calibration_Secure_State_ON",
+        "verb": "set",
+        "description": "Set_Calibration_Secure_State \u2192 ON. Calibration Overview",
+        "scpi": "CALibration:SECure:STATe ON",
+        "scpi_fast": "CAL:SEC:STAT ON",
+        "subsystem": "CAL",
+        "group": "CAL",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Calibration_Secure_State_ON",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Calibration_Secure_State_ON",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Secure_State_ON": {
+        "command": "Set_Secure_State_ON",
+        "verb": "set",
+        "description": "Set_Secure_State \u2192 ON. Calibration Commands",
+        "scpi": ":CALibration:SECure:STATe ON",
+        "scpi_fast": ":CAL:SEC:STAT ON",
+        "subsystem": "SEC",
+        "group": "SEC",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Secure_State_ON",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Secure_State_ON",
             "value": "<value>",
             "input_name": "value"
           }
@@ -2697,6 +3415,246 @@
         },
         "unverified": false
       },
+      "Set_Func_CONT": {
+        "command": "Set_Func_CONT",
+        "verb": "set",
+        "description": "Set_Func \u2192 CONT. Select the measurement function",
+        "scpi": "FUNCtion \"CONT\"",
+        "scpi_fast": "FUNC \"CONT\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_CONT",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_CONT",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_CURR_AC": {
+        "command": "Set_Func_CURR_AC",
+        "verb": "set",
+        "description": "Set_Func \u2192 CURR:AC. Select the measurement function",
+        "scpi": "FUNCtion \"CURR:AC\"",
+        "scpi_fast": "FUNC \"CURR:AC\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_CURR_AC",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_CURR_AC",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_CURR_DC": {
+        "command": "Set_Func_CURR_DC",
+        "verb": "set",
+        "description": "Set_Func \u2192 CURR:DC. Select the measurement function",
+        "scpi": "FUNCtion \"CURR:DC\"",
+        "scpi_fast": "FUNC \"CURR:DC\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_CURR_DC",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_CURR_DC",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_DIOD": {
+        "command": "Set_Func_DIOD",
+        "verb": "set",
+        "description": "Set_Func \u2192 DIOD. Select the measurement function",
+        "scpi": "FUNCtion \"DIOD\"",
+        "scpi_fast": "FUNC \"DIOD\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_DIOD",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_DIOD",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_FREQ": {
+        "command": "Set_Func_FREQ",
+        "verb": "set",
+        "description": "Set_Func \u2192 FREQ. Select the measurement function",
+        "scpi": "FUNCtion \"FREQ\"",
+        "scpi_fast": "FUNC \"FREQ\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_FREQ",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_FREQ",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_FRES": {
+        "command": "Set_Func_FRES",
+        "verb": "set",
+        "description": "Set_Func \u2192 FRES. Select the measurement function",
+        "scpi": "FUNCtion \"FRES\"",
+        "scpi_fast": "FUNC \"FRES\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_FRES",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_FRES",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_PER": {
+        "command": "Set_Func_PER",
+        "verb": "set",
+        "description": "Set_Func \u2192 PER. Select the measurement function",
+        "scpi": "FUNCtion \"PER\"",
+        "scpi_fast": "FUNC \"PER\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_PER",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_PER",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_RES": {
+        "command": "Set_Func_RES",
+        "verb": "set",
+        "description": "Set_Func \u2192 RES. Select the measurement function",
+        "scpi": "FUNCtion \"RES\"",
+        "scpi_fast": "FUNC \"RES\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_RES",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_RES",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_VOLT_AC": {
+        "command": "Set_Func_VOLT_AC",
+        "verb": "set",
+        "description": "Set_Func \u2192 VOLT:AC. Select the measurement function",
+        "scpi": "FUNCtion \"VOLT:AC\"",
+        "scpi_fast": "FUNC \"VOLT:AC\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_VOLT_AC",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_VOLT_AC",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Func_VOLT_DC": {
+        "command": "Set_Func_VOLT_DC",
+        "verb": "set",
+        "description": "Set_Func \u2192 VOLT:DC. Select the measurement function",
+        "scpi": "FUNCtion \"VOLT:DC\"",
+        "scpi_fast": "FUNC \"VOLT:DC\"",
+        "subsystem": "Panel",
+        "group": "One command per measurement function",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Func_VOLT_DC",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Func_VOLT_DC",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
       "Set_Input_Impedance": {
         "command": "Set_Input_Impedance",
         "verb": "set",
@@ -2726,6 +3684,54 @@
           }
         },
         "unverified": false
+      },
+      "Set_Input_Impedance_OFF": {
+        "command": "Set_Input_Impedance_OFF",
+        "verb": "set",
+        "description": "Set_Input_Impedance \u2192 OFF. Set Input Impedance",
+        "scpi": ":INPut:IMPedance:AUTO OFF",
+        "scpi_fast": ":INP:IMP:AUTO OFF",
+        "subsystem": "SENSe",
+        "group": "Measurement Parameters",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Input_Impedance_OFF",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Input_Impedance_OFF",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Input_Impedance_ON": {
+        "command": "Set_Input_Impedance_ON",
+        "verb": "set",
+        "description": "Set_Input_Impedance \u2192 ON. Set Input Impedance",
+        "scpi": ":INPut:IMPedance:AUTO ON",
+        "scpi_fast": ":INP:IMP:AUTO ON",
+        "subsystem": "SENSe",
+        "group": "Measurement Parameters",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Input_Impedance_ON",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Input_Impedance_ON",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
       },
       "Set_Period_Aperture": {
         "command": "Set_Period_Aperture",
@@ -2891,6 +3897,78 @@
         },
         "unverified": false
       },
+      "Set_AC_Bandwidth_20": {
+        "command": "Set_AC_Bandwidth_20",
+        "verb": "set",
+        "description": "Set_AC_Bandwidth \u2192 20. Set AC Bandwidth",
+        "scpi": ":SENSe:DETector:BANDwidth 20",
+        "scpi_fast": ":SENS:DET:BAND 20",
+        "subsystem": "SENSe",
+        "group": "Measurement Parameters",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_AC_Bandwidth_20",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_AC_Bandwidth_20",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_AC_Bandwidth_200": {
+        "command": "Set_AC_Bandwidth_200",
+        "verb": "set",
+        "description": "Set_AC_Bandwidth \u2192 200. Set AC Bandwidth",
+        "scpi": ":SENSe:DETector:BANDwidth 200",
+        "scpi_fast": ":SENS:DET:BAND 200",
+        "subsystem": "SENSe",
+        "group": "Measurement Parameters",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_AC_Bandwidth_200",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_AC_Bandwidth_200",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_AC_Bandwidth_3": {
+        "command": "Set_AC_Bandwidth_3",
+        "verb": "set",
+        "description": "Set_AC_Bandwidth \u2192 3. Set AC Bandwidth",
+        "scpi": ":SENSe:DETector:BANDwidth 3",
+        "scpi_fast": ":SENS:DET:BAND 3",
+        "subsystem": "SENSe",
+        "group": "Measurement Parameters",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_AC_Bandwidth_3",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_AC_Bandwidth_3",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
       "Set_AC_Bandwidth": {
         "command": "Set_AC_Bandwidth",
         "verb": "set",
@@ -3011,6 +4089,54 @@
         },
         "unverified": false
       },
+      "Set_Autorange_OFF": {
+        "command": "Set_Autorange_OFF",
+        "verb": "set",
+        "description": "Set_Autorange \u2192 OFF. Set Autorange",
+        "scpi": ":SENSe:VOLTage:DC:RANGe:AUTO OFF",
+        "scpi_fast": ":SENS:VOLT:DC:RANG:AUTO OFF",
+        "subsystem": "Panel",
+        "group": "SCOPED TO DC VOLTS on purpose: the 34401A has no function-agnostic autorange command, so :SENSe:VOLTage:DC:RANGe:AUTO is what a panel AUTO RANGE control can address. Selecting another function turns its own autorange on by default, which is why this is adequate for a bench panel and would not be for a test sequence.",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Autorange_OFF",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Autorange_OFF",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Autorange_ON": {
+        "command": "Set_Autorange_ON",
+        "verb": "set",
+        "description": "Set_Autorange \u2192 ON. Set Autorange",
+        "scpi": ":SENSe:VOLTage:DC:RANGe:AUTO ON",
+        "scpi_fast": ":SENS:VOLT:DC:RANG:AUTO ON",
+        "subsystem": "Panel",
+        "group": "SCOPED TO DC VOLTS on purpose: the 34401A has no function-agnostic autorange command, so :SENSe:VOLTage:DC:RANGe:AUTO is what a panel AUTO RANGE control can address. Selecting another function turns its own autorange on by default, which is why this is adequate for a bench panel and would not be for a test sequence.",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Autorange_ON",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Autorange_ON",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
       "Set_Questionable_Enable": {
         "command": "Set_Questionable_Enable",
         "verb": "set",
@@ -3089,6 +4215,54 @@
           "direction": "in",
           "payload_format": {
             "command": "Set_System_Beeper_State",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_System_Beeper_State_OFF": {
+        "command": "Set_System_Beeper_State_OFF",
+        "verb": "set",
+        "description": "Set_System_Beeper_State \u2192 OFF. System-Related Commands",
+        "scpi": "SYSTem:BEEPer:STATe OFF",
+        "scpi_fast": "SYST:BEEP:STAT OFF",
+        "subsystem": "SYST",
+        "group": "SYST",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_System_Beeper_State_OFF",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_System_Beeper_State_OFF",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_System_Beeper_State_ON": {
+        "command": "Set_System_Beeper_State_ON",
+        "verb": "set",
+        "description": "Set_System_Beeper_State \u2192 ON. System-Related Commands",
+        "scpi": "SYSTem:BEEPer:STATe ON",
+        "scpi_fast": "SYST:BEEP:STAT ON",
+        "subsystem": "SYST",
+        "group": "SYST",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_System_Beeper_State_ON",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_System_Beeper_State_ON",
             "value": "<value>",
             "input_name": "value"
           }
@@ -3180,6 +4354,78 @@
           }
         },
         "unverified": false
+      },
+      "Set_Trigger_Source_BUS": {
+        "command": "Set_Trigger_Source_BUS",
+        "verb": "set",
+        "description": "Set_Trigger_Source \u2192 BUS. Set Trigger Source",
+        "scpi": ":TRIGger:SOURce BUS",
+        "scpi_fast": ":TRIG:SOUR BUS",
+        "subsystem": "TRIGger",
+        "group": "Setup Trigger Model",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Trigger_Source_BUS",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Trigger_Source_BUS",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Trigger_Source_EXT": {
+        "command": "Set_Trigger_Source_EXT",
+        "verb": "set",
+        "description": "Set_Trigger_Source \u2192 EXT. Set Trigger Source",
+        "scpi": ":TRIGger:SOURce EXT",
+        "scpi_fast": ":TRIG:SOUR EXT",
+        "subsystem": "TRIGger",
+        "group": "Setup Trigger Model",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Trigger_Source_EXT",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Trigger_Source_EXT",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
+      },
+      "Set_Trigger_Source_IMM": {
+        "command": "Set_Trigger_Source_IMM",
+        "verb": "set",
+        "description": "Set_Trigger_Source \u2192 IMM. Set Trigger Source",
+        "scpi": ":TRIGger:SOURce IMM",
+        "scpi_fast": ":TRIG:SOUR IMM",
+        "subsystem": "TRIGger",
+        "group": "Setup Trigger Model",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/DMM/Set_Trigger_Source_IMM",
+          "direction": "in",
+          "payload_format": {
+            "command": "Set_Trigger_Source_IMM",
+            "value": "<value>",
+            "input_name": "value"
+          }
+        },
+        "unverified": true
       },
       "Set_Voltage_Range": {
         "command": "Set_Voltage_Range",

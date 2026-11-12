@@ -15,6 +15,20 @@
       "subsystem": "Common",
       "unverified": true
     },
+    "Set_Psc_0": {
+      "scpi": "*PSC 0",
+      "description": "Set_Psc → 0. Set psc",
+      "subsystem": "Common",
+      "unverified": true,
+      "notes": "Individual of selector Set_Psc = 0 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Psc_1": {
+      "scpi": "*PSC 1",
+      "description": "Set_Psc → 1. Set psc",
+      "subsystem": "Common",
+      "unverified": true,
+      "notes": "Individual of selector Set_Psc = 1 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
     "Set_Psc": {
       "scpi": "*PSC <value>",
       "description": "Set psc",
@@ -59,6 +73,159 @@
         "value"
       ],
       "subsystem": "CALCulate"
+    },
+    "Set_dBm_Ref_1000": {
+      "scpi": ":CALCulate:DBM:REFerence 1000",
+      "scpiFast": ":CALC:DBM:REF 1000",
+      "description": "Set_dBm_Ref → 1000. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 1000 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_110": {
+      "scpi": ":CALCulate:DBM:REFerence 110",
+      "scpiFast": ":CALC:DBM:REF 110",
+      "description": "Set_dBm_Ref → 110. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 110 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_1200": {
+      "scpi": ":CALCulate:DBM:REFerence 1200",
+      "scpiFast": ":CALC:DBM:REF 1200",
+      "description": "Set_dBm_Ref → 1200. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 1200 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_124": {
+      "scpi": ":CALCulate:DBM:REFerence 124",
+      "scpiFast": ":CALC:DBM:REF 124",
+      "description": "Set_dBm_Ref → 124. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 124 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_125": {
+      "scpi": ":CALCulate:DBM:REFerence 125",
+      "scpiFast": ":CALC:DBM:REF 125",
+      "description": "Set_dBm_Ref → 125. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 125 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_135": {
+      "scpi": ":CALCulate:DBM:REFerence 135",
+      "scpiFast": ":CALC:DBM:REF 135",
+      "description": "Set_dBm_Ref → 135. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 135 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_150": {
+      "scpi": ":CALCulate:DBM:REFerence 150",
+      "scpiFast": ":CALC:DBM:REF 150",
+      "description": "Set_dBm_Ref → 150. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 150 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_250": {
+      "scpi": ":CALCulate:DBM:REFerence 250",
+      "scpiFast": ":CALC:DBM:REF 250",
+      "description": "Set_dBm_Ref → 250. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 250 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_300": {
+      "scpi": ":CALCulate:DBM:REFerence 300",
+      "scpiFast": ":CALC:DBM:REF 300",
+      "description": "Set_dBm_Ref → 300. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 300 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_50": {
+      "scpi": ":CALCulate:DBM:REFerence 50",
+      "scpiFast": ":CALC:DBM:REF 50",
+      "description": "Set_dBm_Ref → 50. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 50 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_500": {
+      "scpi": ":CALCulate:DBM:REFerence 500",
+      "scpiFast": ":CALC:DBM:REF 500",
+      "description": "Set_dBm_Ref → 500. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 500 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_600": {
+      "scpi": ":CALCulate:DBM:REFerence 600",
+      "scpiFast": ":CALC:DBM:REF 600",
+      "description": "Set_dBm_Ref → 600. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 600 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_75": {
+      "scpi": ":CALCulate:DBM:REFerence 75",
+      "scpiFast": ":CALC:DBM:REF 75",
+      "description": "Set_dBm_Ref → 75. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 75 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_800": {
+      "scpi": ":CALCulate:DBM:REFerence 800",
+      "scpiFast": ":CALC:DBM:REF 800",
+      "description": "Set_dBm_Ref → 800. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 800 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_8000": {
+      "scpi": ":CALCulate:DBM:REFerence 8000",
+      "scpiFast": ":CALC:DBM:REF 8000",
+      "description": "Set_dBm_Ref → 8000. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 8000 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_900": {
+      "scpi": ":CALCulate:DBM:REFerence 900",
+      "scpiFast": ":CALC:DBM:REF 900",
+      "description": "Set_dBm_Ref → 900. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 900 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_dBm_Ref_93": {
+      "scpi": ":CALCulate:DBM:REFerence 93",
+      "scpiFast": ":CALC:DBM:REF 93",
+      "description": "Set_dBm_Ref → 93. Set dBm Ref",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_dBm_Ref = 93 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
     },
     "Set_dBm_Ref": {
       "scpi": ":CALCulate:DBM:REFerence <value>",
@@ -112,6 +279,51 @@
         "function"
       ],
       "subsystem": "CALCulate"
+    },
+    "Set_Math_Function_AVER": {
+      "scpi": ":CALCulate:FUNCtion AVER",
+      "scpiFast": ":CALC:FUNC AVER",
+      "description": "Set_Math_Function → AVER. Set Math Function",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_Math_Function = AVER — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Math_Function_DB": {
+      "scpi": ":CALCulate:FUNCtion DB",
+      "scpiFast": ":CALC:FUNC DB",
+      "description": "Set_Math_Function → DB. Set Math Function",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_Math_Function = DB — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Math_Function_DBM": {
+      "scpi": ":CALCulate:FUNCtion DBM",
+      "scpiFast": ":CALC:FUNC DBM",
+      "description": "Set_Math_Function → DBM. Set Math Function",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_Math_Function = DBM — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Math_Function_LIM": {
+      "scpi": ":CALCulate:FUNCtion LIM",
+      "scpiFast": ":CALC:FUNC LIM",
+      "description": "Set_Math_Function → LIM. Set Math Function",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_Math_Function = LIM — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Math_Function_NULL": {
+      "scpi": ":CALCulate:FUNCtion NULL",
+      "scpiFast": ":CALC:FUNC NULL",
+      "description": "Set_Math_Function → NULL. Set Math Function",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Set_Math_Function = NULL — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
     },
     "Set_Limit_Lower": {
       "scpi": ":CALCulate:LIMit:LOWer <value>",
@@ -188,6 +400,24 @@
       ],
       "subsystem": "CALCulate"
     },
+    "Enable_Math_OFF": {
+      "scpi": ":CALCulate:STATe OFF",
+      "scpiFast": ":CALC:STAT OFF",
+      "description": "Enable_Math → OFF. Enable Math",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Enable_Math = OFF — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Enable_Math_ON": {
+      "scpi": ":CALCulate:STATe ON",
+      "scpiFast": ":CALC:STAT ON",
+      "description": "Enable_Math → ON. Enable Math",
+      "subsystem": "CALCulate",
+      "group": "Math and Limits Setup",
+      "unverified": true,
+      "notes": "Individual of selector Enable_Math = ON — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
     "Set_Calibration_Secure_State": {
       "scpi": "CALibration:SECure:STATe <value>",
       "scpiFast": "CAL:SEC:STAT <value>",
@@ -223,6 +453,38 @@
       "unverified": true,
       "notes": "Was `:SECure:STATe <value>`: the table generator cut the `CALibration` parent off, so the unit heard a root `` it does not have (-113 \"Undefined header\"). Full path from 34401-90004 Ch. 4 SCPI Command Summary (scpi_paths.py, 2026-11-11).",
       "alias_of": "Set_Calibration_Secure_State"
+    },
+    "Set_Calibration_Secure_State_OFF": {
+      "scpi": "CALibration:SECure:STATe OFF",
+      "scpiFast": "CAL:SEC:STAT OFF",
+      "description": "Set_Calibration_Secure_State → OFF. Calibration Overview",
+      "subsystem": "CAL",
+      "unverified": true,
+      "notes": "Individual of selector Set_Calibration_Secure_State = OFF — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Secure_State_OFF": {
+      "scpi": ":CALibration:SECure:STATe OFF",
+      "scpiFast": ":CAL:SEC:STAT OFF",
+      "description": "Set_Secure_State → OFF. Calibration Commands",
+      "subsystem": "SEC",
+      "unverified": true,
+      "notes": "Individual of selector Set_Secure_State = OFF — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Calibration_Secure_State_ON": {
+      "scpi": "CALibration:SECure:STATe ON",
+      "scpiFast": "CAL:SEC:STAT ON",
+      "description": "Set_Calibration_Secure_State → ON. Calibration Overview",
+      "subsystem": "CAL",
+      "unverified": true,
+      "notes": "Individual of selector Set_Calibration_Secure_State = ON — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Secure_State_ON": {
+      "scpi": ":CALibration:SECure:STATe ON",
+      "scpiFast": ":CAL:SEC:STAT ON",
+      "description": "Set_Secure_State → ON. Calibration Commands",
+      "subsystem": "SEC",
+      "unverified": true,
+      "notes": "Individual of selector Set_Secure_State = ON — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
     },
     "Set_Calibration_String": {
       "scpi": "CALibration:STRing <value>",
@@ -400,6 +662,96 @@
       "subsystem": "Panel",
       "notes": "The quotes are required: the 34401A's FUNCtion parameter is a string, and FUNC VOLT:DC without them is a syntax error. Same configuration the Select_* pair already proves the instrument accepts — CONFigure:VOLTage:DC and FUNCtion \"VOLT:DC\" leave it in the same state — expressed as one command a selector can drive."
     },
+    "Set_Func_CONT": {
+      "scpi": "FUNCtion \"CONT\"",
+      "scpiFast": "FUNC \"CONT\"",
+      "description": "Set_Func → CONT. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = CONT — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_CURR_AC": {
+      "scpi": "FUNCtion \"CURR:AC\"",
+      "scpiFast": "FUNC \"CURR:AC\"",
+      "description": "Set_Func → CURR:AC. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = CURR:AC — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_CURR_DC": {
+      "scpi": "FUNCtion \"CURR:DC\"",
+      "scpiFast": "FUNC \"CURR:DC\"",
+      "description": "Set_Func → CURR:DC. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = CURR:DC — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_DIOD": {
+      "scpi": "FUNCtion \"DIOD\"",
+      "scpiFast": "FUNC \"DIOD\"",
+      "description": "Set_Func → DIOD. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = DIOD — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_FREQ": {
+      "scpi": "FUNCtion \"FREQ\"",
+      "scpiFast": "FUNC \"FREQ\"",
+      "description": "Set_Func → FREQ. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = FREQ — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_FRES": {
+      "scpi": "FUNCtion \"FRES\"",
+      "scpiFast": "FUNC \"FRES\"",
+      "description": "Set_Func → FRES. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = FRES — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_PER": {
+      "scpi": "FUNCtion \"PER\"",
+      "scpiFast": "FUNC \"PER\"",
+      "description": "Set_Func → PER. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = PER — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_RES": {
+      "scpi": "FUNCtion \"RES\"",
+      "scpiFast": "FUNC \"RES\"",
+      "description": "Set_Func → RES. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = RES — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_VOLT_AC": {
+      "scpi": "FUNCtion \"VOLT:AC\"",
+      "scpiFast": "FUNC \"VOLT:AC\"",
+      "description": "Set_Func → VOLT:AC. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = VOLT:AC — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Func_VOLT_DC": {
+      "scpi": "FUNCtion \"VOLT:DC\"",
+      "scpiFast": "FUNC \"VOLT:DC\"",
+      "description": "Set_Func → VOLT:DC. Select the measurement function",
+      "subsystem": "Panel",
+      "group": "One command per measurement function",
+      "unverified": true,
+      "notes": "Individual of selector Set_Func = VOLT:DC — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
     "Set_Input_Impedance": {
       "scpi": ":INPut:IMPedance:AUTO <state>",
       "scpiFast": ":INP:IMP:AUTO <state>",
@@ -416,6 +768,24 @@
         "state"
       ],
       "subsystem": "SENSe"
+    },
+    "Set_Input_Impedance_OFF": {
+      "scpi": ":INPut:IMPedance:AUTO OFF",
+      "scpiFast": ":INP:IMP:AUTO OFF",
+      "description": "Set_Input_Impedance → OFF. Set Input Impedance",
+      "subsystem": "SENSe",
+      "group": "Measurement Parameters",
+      "unverified": true,
+      "notes": "Individual of selector Set_Input_Impedance = OFF — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Input_Impedance_ON": {
+      "scpi": ":INPut:IMPedance:AUTO ON",
+      "scpiFast": ":INP:IMP:AUTO ON",
+      "description": "Set_Input_Impedance → ON. Set Input Impedance",
+      "subsystem": "SENSe",
+      "group": "Measurement Parameters",
+      "unverified": true,
+      "notes": "Individual of selector Set_Input_Impedance = ON — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
     },
     "Set_Period_Aperture": {
       "scpi": "PERiod:APERture <value>",
@@ -524,6 +894,33 @@
       "retired": true,
       "retired_because": "HP 34401A User's Guide 34401-90004 (https://www.manualslib.com/manual/578999/Hp-34401a.html) p. 122: <function>:NPLCycles {0.02|0.2|1|10|100|MIN|MAX} per function (VOLTage:DC, not VOLTage); SENS:VOLT:NPLC names no function"
     },
+    "Set_AC_Bandwidth_20": {
+      "scpi": ":SENSe:DETector:BANDwidth 20",
+      "scpiFast": ":SENS:DET:BAND 20",
+      "description": "Set_AC_Bandwidth → 20. Set AC Bandwidth",
+      "subsystem": "SENSe",
+      "group": "Measurement Parameters",
+      "unverified": true,
+      "notes": "Individual of selector Set_AC_Bandwidth = 20 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_AC_Bandwidth_200": {
+      "scpi": ":SENSe:DETector:BANDwidth 200",
+      "scpiFast": ":SENS:DET:BAND 200",
+      "description": "Set_AC_Bandwidth → 200. Set AC Bandwidth",
+      "subsystem": "SENSe",
+      "group": "Measurement Parameters",
+      "unverified": true,
+      "notes": "Individual of selector Set_AC_Bandwidth = 200 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_AC_Bandwidth_3": {
+      "scpi": ":SENSe:DETector:BANDwidth 3",
+      "scpiFast": ":SENS:DET:BAND 3",
+      "description": "Set_AC_Bandwidth → 3. Set AC Bandwidth",
+      "subsystem": "SENSe",
+      "group": "Measurement Parameters",
+      "unverified": true,
+      "notes": "Individual of selector Set_AC_Bandwidth = 3 — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
     "Set_AC_Bandwidth": {
       "scpi": ":SENSe:DETector:BANDwidth <filter>",
       "scpiFast": ":SENS:DET:BAND <filter>",
@@ -593,6 +990,24 @@
       ],
       "subsystem": "Panel"
     },
+    "Set_Autorange_OFF": {
+      "scpi": ":SENSe:VOLTage:DC:RANGe:AUTO OFF",
+      "scpiFast": ":SENS:VOLT:DC:RANG:AUTO OFF",
+      "description": "Set_Autorange → OFF. Set Autorange",
+      "subsystem": "Panel",
+      "group": "SCOPED TO DC VOLTS on purpose: the 34401A has no function-agnostic autorange command, so :SENSe:VOLTage:DC:RANGe:AUTO is what a panel AUTO RANGE control can address. Selecting another function turns its own autorange on by default, which is why this is adequate for a bench panel and would not be for a test sequence.",
+      "unverified": true,
+      "notes": "Individual of selector Set_Autorange = OFF — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Autorange_ON": {
+      "scpi": ":SENSe:VOLTage:DC:RANGe:AUTO ON",
+      "scpiFast": ":SENS:VOLT:DC:RANG:AUTO ON",
+      "description": "Set_Autorange → ON. Set Autorange",
+      "subsystem": "Panel",
+      "group": "SCOPED TO DC VOLTS on purpose: the 34401A has no function-agnostic autorange command, so :SENSe:VOLTage:DC:RANGe:AUTO is what a panel AUTO RANGE control can address. Selecting another function turns its own autorange on by default, which is why this is adequate for a bench panel and would not be for a test sequence.",
+      "unverified": true,
+      "notes": "Individual of selector Set_Autorange = ON — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
     "Set_Questionable_Enable": {
       "scpi": ":STATus:QUEStionable:ENABle <value>",
       "scpiFast": ":STAT:QUES:ENAB <value>",
@@ -640,6 +1055,22 @@
       "subsystem": "SYST",
       "unverified": true
     },
+    "Set_System_Beeper_State_OFF": {
+      "scpi": "SYSTem:BEEPer:STATe OFF",
+      "scpiFast": "SYST:BEEP:STAT OFF",
+      "description": "Set_System_Beeper_State → OFF. System-Related Commands",
+      "subsystem": "SYST",
+      "unverified": true,
+      "notes": "Individual of selector Set_System_Beeper_State = OFF — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_System_Beeper_State_ON": {
+      "scpi": "SYSTem:BEEPer:STATe ON",
+      "scpiFast": "SYST:BEEP:STAT ON",
+      "description": "Set_System_Beeper_State → ON. System-Related Commands",
+      "subsystem": "SYST",
+      "unverified": true,
+      "notes": "Individual of selector Set_System_Beeper_State = ON — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
     "Set_Trigger_Count": {
       "scpi": ":TRIGger:COUNt <count>",
       "scpiFast": ":TRIG:COUN <count>",
@@ -686,6 +1117,33 @@
         "source"
       ],
       "subsystem": "TRIGger"
+    },
+    "Set_Trigger_Source_BUS": {
+      "scpi": ":TRIGger:SOURce BUS",
+      "scpiFast": ":TRIG:SOUR BUS",
+      "description": "Set_Trigger_Source → BUS. Set Trigger Source",
+      "subsystem": "TRIGger",
+      "group": "Setup Trigger Model",
+      "unverified": true,
+      "notes": "Individual of selector Set_Trigger_Source = BUS — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Trigger_Source_EXT": {
+      "scpi": ":TRIGger:SOURce EXT",
+      "scpiFast": ":TRIG:SOUR EXT",
+      "description": "Set_Trigger_Source → EXT. Set Trigger Source",
+      "subsystem": "TRIGger",
+      "group": "Setup Trigger Model",
+      "unverified": true,
+      "notes": "Individual of selector Set_Trigger_Source = EXT — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
+    },
+    "Set_Trigger_Source_IMM": {
+      "scpi": ":TRIGger:SOURce IMM",
+      "scpiFast": ":TRIG:SOUR IMM",
+      "description": "Set_Trigger_Source → IMM. Set Trigger Source",
+      "subsystem": "TRIGger",
+      "group": "Setup Trigger Model",
+      "unverified": true,
+      "notes": "Individual of selector Set_Trigger_Source = IMM — written by _komand/expand_selectors.py from the selector; edit the selector (its arg.values / arg.labels), not this. Unverified until the bench sends this option."
     },
     "Set_Voltage_Range": {
       "scpi": "VOLTage:RANGe <value>",
